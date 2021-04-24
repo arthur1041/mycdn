@@ -426,7 +426,7 @@ function fetchProductsFromCart(context = "") {
                                 <div class="mc-prod-data">
                                     <p>${el.name}</p>
                                     <p>Qnt: ${el.quantity}</p>
-                                    <p>R$ ${(el.price && el.price !== "") ? el.price / 10 : ""}</p>
+                                    <p>R$ ${(el.price && el.price !== "") ? Number(el.price / 100).toFixed(2).replace(".", ",") : ""}</p>
                                 </div>
                             </div>
                         </li>
