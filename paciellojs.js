@@ -500,6 +500,19 @@ function configureBuyBtn() {
 
 }
 
+function setUpBreadCrumb() {
+    let breadcrumb = document.querySelector(".breadcrumb-section .breadcrumb");
+    try {
+        document.querySelectorAll(".vtex-breadcrumb-wrapper li").forEach(function (el) {
+            breadcrumb.append(htd(/*html*/`
+                <span class="breadcrumb-item">${el.innerText}</span>        
+            `));
+        });
+    } catch (error) {
+        console.log(e);
+    }
+}
+
 DomReady.ready(function () {
     const header = document.querySelector("header");
     const menuBtn = document.querySelector(".menu-btn");
@@ -528,6 +541,7 @@ DomReady.ready(function () {
     setUpOrderBy();
     fetchProductsFromCart();
     configureBuyBtn();
+    setUpBreadCrumb();
 
     try {
         menuBtn.addEventListener("click", () => {
