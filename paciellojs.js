@@ -1,3 +1,4 @@
+alert("testando atualização");
 (function () {
 
     var DomReady = window.DomReady = {};
