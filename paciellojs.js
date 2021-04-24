@@ -1,4 +1,4 @@
-alert("testando atualização");
+console.log("testando atualização");
 (function () {
 
     var DomReady = window.DomReady = {};
