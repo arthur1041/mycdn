@@ -1,4 +1,4 @@
-console.log("testando atualização");
+console.log("testando atualização@AEEDDD");
 (function () {
 
     var DomReady = window.DomReady = {};
