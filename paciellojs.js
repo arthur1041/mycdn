@@ -437,27 +437,29 @@ function fetchProductsFromCart(context = "") {
             }
 
             document.querySelectorAll(".btn-remove-from-cart").forEach(function (el) {
-                let produtoNome = el.getAttribute("data-produto-nome");
-                let produtoSku =  el.getAttribute('data-id-sku');
+                el.addEventListener("click", function (params) {
+                    let produtoNome = el.getAttribute("data-produto-nome");
+                    let produtoSku = el.getAttribute('data-id-sku');
 
-                vtexjs.checkout.getOrderForm().done(function (orderForm) {
-                    // console.log(orderForm); 
-                    for (var i = 0; i < orderForm.items.length; i++) {
-                        if (orderForm.items[i].name == produtoNome) {
-                            var updateItemObj = {
-                                "index": i,
-                                "quantity": 0
-                            };
-                            vtexjs.checkout.removeItems([updateItemObj]).done(function () {
-                                vtexjs.checkout.getOrderForm().done(function (orderForm) {
-                                    fetchProductsFromCart();
+                    vtexjs.checkout.getOrderForm().done(function (orderForm) {
+                        // console.log(orderForm); 
+                        for (var i = 0; i < orderForm.items.length; i++) {
+                            if (orderForm.items[i].name == produtoNome) {
+                                var updateItemObj = {
+                                    "index": i,
+                                    "quantity": 0
+                                };
+                                vtexjs.checkout.removeItems([updateItemObj]).done(function () {
+                                    vtexjs.checkout.getOrderForm().done(function (orderForm) {
+                                        fetchProductsFromCart();
+                                    });
                                 });
-                            });
 
+                            }
                         }
-                    }
 
-                });
+                    });
+                })
             });
 
             if (context === "adding_prod") {
