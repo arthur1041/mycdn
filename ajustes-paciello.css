@@ -1,3 +1,17 @@
+.pagina-produto .buy-button.buy-button-ref {
+    display: none;
+}
+
+.has-submenu > a.sub-item-hover::after{
+	content: "";
+    width: 100%;
+    height: 6px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 54px;
+}
+
 .txt-prod-indisponivel {
 	text-align: center;
     font-weight: bold;
