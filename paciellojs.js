@@ -249,9 +249,7 @@ function setUpLensModalFunctionalities() {
 
         });
 
-        console.log("Adicionando evnt2", chooseDecorationBtnMob);
-
-        chooseOtherLensBtnMob.onclick = function () {
+        chooseOtherLensBtnMob.addEventListener("click", function () {
             alert("TESTE")
             lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
             lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
@@ -259,7 +257,7 @@ function setUpLensModalFunctionalities() {
             lensModalDesk.querySelector(".lens-list-wrapper").style.display = "block";
             lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
 
-        };
+        });
 
         console.log("rodoooooooooooooouuuuuuuuuuu")
     }
