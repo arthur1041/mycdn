@@ -224,22 +224,24 @@ DomReady.ready(function () {
 
     addToCartButtons = document.querySelectorAll(".choose-lens-box .add-to-cart-btn:not(.continue)");
 
-    addToCartButtons.addEventListener("click", function () {
-        let params = "";
+    addToCartButtons.forEach(function (el) {
+        el.addEventListener("click", function () {
+            let params = "";
 
-        configureSelectedStuff();
+            configureSelectedStuff();
 
-        if(chosenConfiguration.selectedLensParameters){
-            params = chosenConfiguration.selectedLensParameters;
-        } else if (chosenConfiguration.selectedDecoParameters){
-            params = chosenConfiguration.selectedDecoParameters;
-        } else if (chosenConfiguration.selectedLensParameters && chosenConfiguration.selectedDecoParameters){
-            params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
-        }
+            if (chosenConfiguration.selectedLensParameters) {
+                params = chosenConfiguration.selectedLensParameters;
+            } else if (chosenConfiguration.selectedDecoParameters) {
+                params = chosenConfiguration.selectedDecoParameters;
+            } else if (chosenConfiguration.selectedLensParameters && chosenConfiguration.selectedDecoParameters) {
+                params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
+            }
 
-        fetch(websitedomain + "/checkout/cart/add?"+params).then(function(response){
-            console.log(response);
-            fetchProductsFromCart("adding_prod");
+            fetch(websitedomain + "/checkout/cart/add?" + params).then(function (response) {
+                console.log(response);
+                fetchProductsFromCart("adding_prod");
+            });
         });
     });
 });
