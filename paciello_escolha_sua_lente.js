@@ -39,7 +39,13 @@ let chosenConfiguration = {
 function stringifyPrice(n) {
     return "R$ " + Number(n).toFixed(2).replace(".", ",");
 }
-
+function numberfyPrice(n) {
+    try {
+        return Number(n.replaceAll("R", "").replaceAll("$", "").replaceAll(" ", "").replaceAll(",", "."));
+    } catch (e) {
+        console.log(e);
+    }
+}
 //application:
 let productImageSrc = null;
 let chooseLensImages = null;

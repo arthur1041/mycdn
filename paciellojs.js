@@ -250,6 +250,7 @@ function setUpLensModalFunctionalities() {
         });
 
         chooseOtherLensBtnMob.addEventListener("click", function () {
+            alert("TESTE")
             lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
             lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
 
