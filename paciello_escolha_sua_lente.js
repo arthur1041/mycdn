@@ -224,7 +224,7 @@ DomReady.ready(function () {
 
     addToCartButtons = document.querySelectorAll(".choose-lens-box .add-to-cart-btn:not(.continue)");
 
-    addToCartButtons.forEach(function (el) {
+    addToCartButtons.addEventListener("click", function () {
         let params = "";
 
         if(chosenConfiguration.selectedLensParameters){
