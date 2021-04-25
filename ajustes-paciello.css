@@ -111,3 +111,13 @@ div#ajaxBusy {
 section.carousel-section {
 	position: relative;
 }
+
+@media (min-width: 992px){
+    .choose-lens-modal-desktop div.choose-lens-box{
+        margin-top: 0;
+    }
+    div.choose-lens-modal-desktop.open {
+        display: flex;
+        align-items: center;
+    }
+    }

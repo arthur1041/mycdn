@@ -73,7 +73,7 @@ DomReady.ready(function () {
 
     lensItems.forEach(function (el) {
         el.addEventListener("click", function(){
-            console.log("SELECIONADO", document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected"));
+            document.querySelector(".choose-lens-box .lens-list .lens-item.selected");
         });
     });
 
