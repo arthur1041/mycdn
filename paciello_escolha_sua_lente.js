@@ -227,6 +227,8 @@ DomReady.ready(function () {
     addToCartButtons.addEventListener("click", function () {
         let params = "";
 
+        configureSelectedStuff();
+
         if(chosenConfiguration.selectedLensParameters){
             params = chosenConfiguration.selectedLensParameters;
         } else if (chosenConfiguration.selectedDecoParameters){
@@ -235,7 +237,8 @@ DomReady.ready(function () {
             params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
         }
 
-        fetch(websitedomain + "/checkout/cart/add?"+params).then(function(){
+        fetch(websitedomain + "/checkout/cart/add?"+params).then(function(response){
+            console.log(response);
             fetchProductsFromCart("adding_prod");
         });
     });
