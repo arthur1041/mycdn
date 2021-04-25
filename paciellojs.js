@@ -249,6 +249,8 @@ function setUpLensModalFunctionalities() {
 
         });
 
+        console.log("Adicionando evnt")
+
         chooseOtherLensBtnMob.addEventListener("click", function () {
             alert("TESTE")
             lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
