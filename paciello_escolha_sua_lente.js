@@ -66,8 +66,8 @@ DomReady.ready(function () {
         el.addEventListener("click", function () {
             if(el.classList.contains("lente-resina")){
                 alert("lente resina clicado");
-            }
+        }
         });
-    })
+})
 });
 
