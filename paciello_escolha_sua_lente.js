@@ -32,14 +32,15 @@ try {
 
 //functions
 function findLensItemByClassName(className) {
-   
+
 }
 
 //application:
 let productImageSrc = null;
 let chooseLensImages = null;
 let orderResume = null;
-let lensItems = null;
+let selectedLensItems = null;
+let chooseDecorationBtn = null;
 
 DomReady.ready(function () {
     try {
@@ -60,14 +61,15 @@ DomReady.ready(function () {
         }
     });
 
-    lensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item");
+    selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
 
-    lensItems.forEach(function (el) {
-        el.addEventListener("click", function () {
-            if(el.classList.contains("lente-resina")){
-                alert("lente resina clicado");
-        }
+    chooseDecorationBtn = document.querySelectorAll(".choose-lens-box .prod-btn.choose-decoration-btn"); 
+    
+    chooseDecorationBtn.forEach(function (el) {
+        el.addEventListener("click", function (params) {
+            selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
+            console.log(selectedLensItems);
         });
-})
+    });
 });
 
