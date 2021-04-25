@@ -32,7 +32,8 @@ let chooseLensData = {
 }
 
 let chosenConfiguration = {
-
+    selectedLensParameters: "",
+    selectedDecoParameters: ""
 }
 
 //functions
@@ -45,7 +46,15 @@ function numberfyPrice(n) {
     } catch (e) {
         console.log(e);
     }
+    return 0;
 }
+
+function configureSelectedStuff() {
+    if (selectedLensItems[0] && selectedLensItems[0].classList.contains("lente-resina")) {
+        chosenConfiguration.selectedLensParameters = chooseLensData.lenteResina.addToCartParameters;
+    }
+}
+
 //application:
 let productImageSrc = null;
 let chooseLensImages = null;
@@ -101,8 +110,6 @@ DomReady.ready(function () {
         }
     });
 
-    selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
-
     lensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item");
 
     lensItems.forEach(function (el) {
@@ -112,12 +119,12 @@ DomReady.ready(function () {
             if (selectedItem.classList.contains("lente-resina")) {
                 orderResume.forEach(function (ell) {
                     ell.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResina.name;
-                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResina.price);;
+                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResina.price);
                 });
             } else if (selectedItem.classList.contains("lente-policarbonato")) {
                 orderResume.forEach(function (ell) {
                     ell.querySelector(".order-lens .nome").innerText = chooseLensData.lentePolicarbonato.name;
-                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lentePolicarbonato.price);;
+                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lentePolicarbonato.price);
                 });
             } else if (selectedItem.classList.contains("lente-resina-alto-indice")) {
                 orderResume.forEach(function (ell) {
@@ -130,6 +137,15 @@ DomReady.ready(function () {
                     ell.querySelector(".order-lens .price").innerText = "";
                 });
             }
+            selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
+            selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
+
+            ell.querySelector(".order-total .price").innerText =
+                stringifyPrice(
+                    numberfyPrice(chooseLensData.oculosPreco) +
+                    numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
+                    numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
+                );
         });
     });
 
@@ -150,6 +166,15 @@ DomReady.ready(function () {
                     ell.querySelector(".order-decoration .price").innerText = "";
                 });
             }
+            selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
+            selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
+
+            ell.querySelector(".order-total .price").innerText =
+                stringifyPrice(
+                    numberfyPrice(chooseLensData.oculosPreco) +
+                    numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
+                    numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
+                );
         });
     });
 
@@ -164,8 +189,8 @@ DomReady.ready(function () {
 
     addToCartButtons = document.querySelectorAll(".choose-lens-box .add-to-cart-btn:not(.continue)");
 
-    addToCartButtons.forEach(function(el){
-        
+    addToCartButtons.forEach(function (el) {
+
     });
 });
 
