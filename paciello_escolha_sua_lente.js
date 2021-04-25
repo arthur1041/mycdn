@@ -140,12 +140,14 @@ DomReady.ready(function () {
             selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
             selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
 
-            ell.querySelector(".order-total .price").innerText =
-                stringifyPrice(
-                    numberfyPrice(chooseLensData.oculosPreco) +
-                    numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
-                    numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
-                );
+            orderResume.forEach(function (ell) {
+                ell.querySelector(".order-total .price").innerText =
+                    stringifyPrice(
+                        numberfyPrice(chooseLensData.oculosPreco) +
+                        numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
+                        numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
+                    );
+            });
         });
     });
 
@@ -169,12 +171,14 @@ DomReady.ready(function () {
             selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
             selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
 
-            ell.querySelector(".order-total .price").innerText =
-                stringifyPrice(
-                    numberfyPrice(chooseLensData.oculosPreco) +
-                    numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
-                    numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
-                );
+            orderResume.forEach(function (ell) {
+                ell.querySelector(".order-total .price").innerText =
+                    stringifyPrice(
+                        numberfyPrice(chooseLensData.oculosPreco) +
+                        numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
+                        numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
+                    );
+            });
         });
     });
 
