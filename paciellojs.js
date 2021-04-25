@@ -388,14 +388,14 @@ function hideOverlay() {
 
 let websitedomain = null;
 
+try {
+    websitedomain = new URL(window.location.href).origin;
+} catch (error) {
+    console.log(error);
+}
+
 function fetchProductsFromCart(context = "") {
     let miniCart = document.querySelector("div.minicart");
-
-    try {
-        websitedomain = new URL(window.location.href).origin;
-    } catch (error) {
-        console.log(error);
-    }
 
     if (websitedomain) {
         fetch(websitedomain + "/api/checkout/pub/orderForm?sc=1").then(function (response) {

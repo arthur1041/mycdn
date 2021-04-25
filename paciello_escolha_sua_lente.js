@@ -54,6 +54,7 @@ let selectedLensItems = null;
 let chooseDecorationBtn = null;
 let lensItems = null;
 let decorationItems = null;
+let addToCartButtons = null;
 
 DomReady.ready(function () {
     //adjusts
@@ -159,6 +160,12 @@ DomReady.ready(function () {
             selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
 
         });
+    });
+
+    addToCartButtons = document.querySelectorAll(".choose-lens-box .add-to-cart-btn:not(.continue)");
+
+    addToCartButtons.forEach(function(el){
+        
     });
 });
 
