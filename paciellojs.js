@@ -146,8 +146,8 @@ function setUpLensModalFunctionalities() {
 
                         lensItemsMob[i].classList.add("selected");
                     } else {
-                        lensItemsDesk[i].classList.remove("selected");
-                        lensItemsMob[i].classList.remove("selected");
+                        // lensItemsDesk[i].classList.remove("selected");
+                        // lensItemsMob[i].classList.remove("selected");
                     }
                 });
             }
@@ -170,8 +170,8 @@ function setUpLensModalFunctionalities() {
                         //virar desk
                         lensItemsDesk[i].classList.add("selected");
                     } else {
-                        lensItemsMob[i].classList.remove("selected");
-                        lensItemsDesk[i].classList.remove("selected");
+                        // lensItemsMob[i].classList.remove("selected");
+                        // lensItemsDesk[i].classList.remove("selected");
                     }
                 });
             }
@@ -193,8 +193,8 @@ function setUpLensModalFunctionalities() {
 
                         decorationItemsMob[i].classList.add("selected");
                     } else {
-                        decorationItemsDesk[i].classList.remove("selected");
-                        decorationItemsMob[i].classList.remove("selected");
+                        // decorationItemsDesk[i].classList.remove("selected");
+                        // decorationItemsMob[i].classList.remove("selected");
                     }
                 });
             }
@@ -217,8 +217,8 @@ function setUpLensModalFunctionalities() {
                         //virar desk
                         decorationItemsDesk[i].classList.add("selected");
                     } else {
-                        decorationItemsMob[i].classList.remove("selected");
-                        decorationItemsMob[i].classList.remove("selected");
+                        // decorationItemsMob[i].classList.remove("selected");
+                        // decorationItemsMob[i].classList.remove("selected");
                     }
                 });
             }
