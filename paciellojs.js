@@ -127,6 +127,8 @@ function setUpLensModalFunctionalities() {
     let chooseOtherLensBtnDesk = lensModalDesk.querySelector(".choose-other-lens-btn");
     let chooseOtherLensBtnMob = lensModalMob.querySelectorAll(".choose-other-lens-btn");
 
+    let continueToResumeBtn = lensModalMob.querySelector(".add-to-cart-btn.continue");
+
     if (lensModalDesk && lensModalMob) {
         if (lensItemsDesk) {
             for (let i = 0; i < lensItemsDesk.length; i++) {
@@ -259,6 +261,10 @@ function setUpLensModalFunctionalities() {
                 lensModalDesk.querySelector(".lens-list-wrapper").style.display = "block";
                 lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
             });
+        });
+
+        continueToResumeBtn.addEventListener("click", function(){
+            alert("funcionando");
         });
     }
 }
