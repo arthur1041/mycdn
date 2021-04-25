@@ -49,6 +49,7 @@
 .choose-lens-modal-desktop .fn.productName{
 	max-height: 55px;
 	overflow: hidden;
+    text-align: center;
 }
 
 @media (min-width: 992px){
