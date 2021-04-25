@@ -6,25 +6,37 @@ let chooseLensData = {
     lenteResina: {
         addToCartParameters: "sku=117&qty=1&seller=1&redirect=true&sc=1",
         productUrl: "/helsinki-paciello-cor-offwhitebege-oculosdesol/p",
-    },
+        price: 14.96,
+        name: "Resina"
+    }, 
     lentePolicarbonato: {
         addToCartParameters: "sku=115&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/cannes-paciello-cor-branca-oculosdegrau/p"
+        productUrl: "/cannes-paciello-cor-branca-oculosdegrau/p",
+        price: 14.96,
+        name: "Policarbonato"
     },
 
     lenteResinaAltoIndice: {
         addToCartParameters: "sku=55&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/vancouver-paciello-cor-mel-lentesg15-oculosdesol/p"
+        productUrl: "/vancouver-paciello-cor-mel-lentesg15-oculosdesol/p",
+        price: 19.60,
+        name: "Resina de Alto Índice"
     },
 
     acabamentoLuzesAzuis: {
         addToCartParameters: "sku=41&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/moscou-paciello-cor-azul-oculosdegrau/p"
+        productUrl: "/moscou-paciello-cor-azul-oculosdegrau/p",
+        price: 11.74,
+        name: "Tratamento Proteção Luzes Azuis"
     }
 }
 
 let chosenConfiguration = {
 
+}
+
+function stringifyPrice(n){
+    return "R$ "+Number(n).toFixed(2).replace(".", ",");
 }
 
 //adjusts
@@ -52,13 +64,13 @@ let lensItems = null;
 
 DomReady.ready(function () {
     try {
-        chooseLensData.oculosModelo = vtxctx.categoryName;    
+        chooseLensData.oculosModelo = vtxctx.categoryName;
     } catch (error) {
         console.log(error);
     }
 
     try {
-        chooseLensData.oculosPreco = document.querySelector(".price-info .price .regular").innerText;        
+        chooseLensData.oculosPreco = document.querySelector(".price-info .price .regular").innerText;
     } catch (error) {
         console.log(error);
     }
@@ -71,7 +83,7 @@ DomReady.ready(function () {
 
     orderResume = document.querySelectorAll(".choose-lens-box .order-resume");
 
-    orderResume.forEach(function(el){
+    orderResume.forEach(function (el) {
         el.querySelector(".order-model .nome").innerText = chooseLensData.oculosModelo;
         el.querySelector(".order-model .price").innerText = chooseLensData.oculosPreco;
     });
@@ -91,7 +103,7 @@ DomReady.ready(function () {
     lensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item");
 
     lensItems.forEach(function (el) {
-        el.addEventListener("click", function(){
+        el.addEventListener("click", function () {
             document.querySelector(".choose-lens-box .lens-list .lens-item.selected");
         });
     });
