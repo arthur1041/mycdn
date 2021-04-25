@@ -53,6 +53,7 @@ let orderResume = null;
 let selectedLensItems = null;
 let chooseDecorationBtn = null;
 let lensItems = null;
+let decorationItems = null;
 
 DomReady.ready(function () {
     //adjusts
@@ -105,27 +106,42 @@ DomReady.ready(function () {
 
     lensItems.forEach(function (el) {
         el.addEventListener("click", function () {
-            selectedItem = document.querySelector(".choose-lens-box .lens-list .lens-item.selected");
+            let selectedItem = document.querySelector(".choose-lens-box .lens-list .lens-item.selected");
 
             if (selectedItem.classList.contains("lente-resina")) {
-                orderResume.forEach(function (el) {
-                    el.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResina.name;
-                    el.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResina.price);;
+                orderResume.forEach(function (ell) {
+                    ell.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResina.name;
+                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResina.price);;
                 });
             } else if (selectedItem.classList.contains("lente-policarbonato")) {
-                orderResume.forEach(function (el) {
-                    el.querySelector(".order-lens .nome").innerText = chooseLensData.lentePolicarbonato.name;
-                    el.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lentePolicarbonato.price);;
+                orderResume.forEach(function (ell) {
+                    ell.querySelector(".order-lens .nome").innerText = chooseLensData.lentePolicarbonato.name;
+                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lentePolicarbonato.price);;
                 });
             } else if (selectedItem.classList.contains("lente-resina-alto-indice")) {
-                orderResume.forEach(function (el) {
-                    el.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResinaAltoIndice.name;
-                    el.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResinaAltoIndice.price);;
+                orderResume.forEach(function (ell) {
+                    ell.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResinaAltoIndice.name;
+                    ell.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResinaAltoIndice.price);;
                 });
             } else {
-                orderResume.forEach(function (el) {
-                    el.querySelector(".order-lens .nome").innerText = "";
-                    el.querySelector(".order-lens .price").innerText = "";
+                orderResume.forEach(function (ell) {
+                    ell.querySelector(".order-lens .nome").innerText = "";
+                    ell.querySelector(".order-lens .price").innerText = "";
+                });
+            }
+        });
+    });
+
+    decorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item");
+    
+    decorationItems.forEach(function (el) {
+        el.addEventListener("click", function(){
+            let selectedItem = document.querySelector(".choose-lens-box .decoration-list .decoration-item.selected");
+            
+            if(selectedItem.classList.contains("acabamento-luzes-azuis")){
+                orderResume.forEach(function(ell){
+                    ell.querySelector(".order-decoration .nome").innerText = chooseLensData.acabamentoLuzesAzuis.name;
+                    ell.querySelector(".order-decoration .price").innerText = stringifyPrice(chooseLensData.acabamentoLuzesAzuis.price);
                 });
             }
         });
