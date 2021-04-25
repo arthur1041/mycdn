@@ -8,7 +8,7 @@ let chooseLensData = {
         productUrl: "/helsinki-paciello-cor-offwhitebege-oculosdesol/p",
         price: 14.96,
         name: "Resina"
-    }, 
+    },
     lentePolicarbonato: {
         addToCartParameters: "sku=115&qty=1&seller=1&redirect=true&sc=1",
         productUrl: "/cannes-paciello-cor-branca-oculosdegrau/p",
@@ -35,24 +35,10 @@ let chosenConfiguration = {
 
 }
 
-function stringifyPrice(n){
-    return "R$ "+Number(n).toFixed(2).replace(".", ",");
-}
-
-//adjusts
-try {
-    if (document.querySelector(".portal-notify-me-ref .notifyme.sku-notifyme").style.display !== "none") {
-        document.querySelector(".prod-buttons").innerHTML = "<p class='txt-prod-indisponivel'>Esgotado</p>";
-    }
-} catch (e) {
-    console.log(e);
-}
-
 //functions
-function ClassName(className) {
-
+function stringifyPrice(n) {
+    return "R$ " + Number(n).toFixed(2).replace(".", ",");
 }
-
 
 //application:
 let productImageSrc = null;
@@ -63,6 +49,15 @@ let chooseDecorationBtn = null;
 let lensItems = null;
 
 DomReady.ready(function () {
+    //adjusts
+    try {
+        if (document.querySelector(".portal-notify-me-ref .notifyme.sku-notifyme").style.display !== "none") {
+            document.querySelector(".prod-buttons").innerHTML = "<p class='txt-prod-indisponivel'>Esgotado</p>";
+        }
+    } catch (e) {
+        console.log(e);
+    }
+
     try {
         chooseLensData.oculosModelo = vtxctx.categoryName;
     } catch (error) {
@@ -104,7 +99,29 @@ DomReady.ready(function () {
 
     lensItems.forEach(function (el) {
         el.addEventListener("click", function () {
-            document.querySelector(".choose-lens-box .lens-list .lens-item.selected");
+            selectedItem = document.querySelector(".choose-lens-box .lens-list .lens-item.selected");
+
+            if (selectedItem.classList.contains("lente-resina")) {
+                orderResume.forEach(function (el) {
+                    el.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResina.name;
+                    el.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResina.price);;
+                });
+            } else if (selectedItem.classList.contains("lente-policarbonato")) {
+                orderResume.forEach(function (el) {
+                    el.querySelector(".order-lens .nome").innerText = chooseLensData.lentePolicarbonato.name;
+                    el.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lentePolicarbonato.price);;
+                });
+            } else if (selectedItem.classList.contains("lente-resina-alto-indice")) {
+                orderResume.forEach(function (el) {
+                    el.querySelector(".order-lens .nome").innerText = chooseLensData.lenteResinaAltoIndice.name;
+                    el.querySelector(".order-lens .price").innerText = stringifyPrice(chooseLensData.lenteResinaAltoIndice.price);;
+                });
+            } else {
+                orderResume.forEach(function (el) {
+                    el.querySelector(".order-lens .nome").innerText = "";
+                    el.querySelector(".order-lens .price").innerText = "";
+                });
+            }
         });
     });
 
