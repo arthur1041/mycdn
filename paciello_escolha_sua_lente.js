@@ -32,8 +32,8 @@ let chooseLensData = {
 }
 
 let chosenConfiguration = {
-    selectedLensParameters: "",
-    selectedDecoParameters: ""
+    selectedLensParameters: null,
+    selectedDecoParameters: null
 }
 
 //functions
@@ -53,8 +53,24 @@ function numberfyPrice(n) {
 }
 
 function configureSelectedStuff() {
-    if (selectedLensItems[0] && selectedLensItems[0].classList.contains("lente-resina")) {
-        chosenConfiguration.selectedLensParameters = chooseLensData.lenteResina.addToCartParameters;
+    if (selectedLensItems[0]) {
+        if (selectedLensItems[0].classList.contains("lente-resina")) {
+            chosenConfiguration.selectedLensParameters = chooseLensData.lenteResina.addToCartParameters;
+        } else if (selectedLensItems[0].classList.contains("lente-policarbonato")) {
+            chosenConfiguration.selectedLensParameters = chooseLensData.lentePolicarbonato.addToCartParameters;
+        } else if (selectedLensItems[0].classList.contains("lente-resina-alto-indice")) {
+            chosenConfiguration.selectedLensParameters = chooseLensData.lenteResinaAltoIndice.addToCartParameters;
+        } else {
+            chosenConfiguration.selectedDecoParameters = null;
+        }
+    }
+
+    if(selectedDecorationItems[0]){
+        if(selectedLensItems[0].classList.contains("acabamento-luzes-azuis")){
+            chosenConfiguration.selectedDecoParameters = chooseLensData.lenteResinaAltoIndice.addToCartParameters;  
+        } else {
+            chosenConfiguration.selectedDecoParameters = null;
+        }
     }
 }
 
@@ -63,6 +79,7 @@ let productImageSrc = null;
 let chooseLensImages = null;
 let orderResume = null;
 let selectedLensItems = null;
+let selectedDecorationItems =  null;
 let chooseDecorationBtn = null;
 let lensItems = null;
 let decorationItems = null;
@@ -151,7 +168,7 @@ DomReady.ready(function () {
                             numberfyPrice(orderResume[0].querySelector(".order-lens .price").innerText) +
                             numberfyPrice(orderResume[0].querySelector(".order-decoration .price").innerText)
                         );
-                } catch (e){
+                } catch (e) {
                     console.log(e)
                 }
             });
@@ -186,7 +203,7 @@ DomReady.ready(function () {
                             numberfyPrice(orderResume[0].querySelector(".order-lens .price").innerText) +
                             numberfyPrice(orderResume[0].querySelector(".order-decoration .price").innerText)
                         );
-                } catch (e){
+                } catch (e) {
                     console.log(e)
                 }
             });
