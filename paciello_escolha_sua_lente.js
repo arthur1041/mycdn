@@ -1,22 +1,23 @@
+// /checkout/cart/add?
 //data
 let chooseLensData = {
     lenteResina: {
-        addToCartUrl: "/checkout/cart/add?sku=117&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "https://paciello.myvtex.com/helsinki-paciello-cor-offwhitebege-oculosdesol/p",
+        addToCartParameters: "sku=117&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/helsinki-paciello-cor-offwhitebege-oculosdesol/p",
     },
     lentePolicarbonato: {
-        addToCartUrl: "/checkout/cart/add?sku=115&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "https://paciello.myvtex.com/cannes-paciello-cor-branca-oculosdegrau/p"
+        addToCartParameters: "sku=115&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/cannes-paciello-cor-branca-oculosdegrau/p"
     },
 
     lenteResinaAltoIndice: {
-        addToCartUrl: "/checkout/cart/add?sku=55&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "https://paciello.myvtex.com/vancouver-paciello-cor-mel-lentesg15-oculosdesol/p"
+        addToCartParameters: "sku=55&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/vancouver-paciello-cor-mel-lentesg15-oculosdesol/p"
     },
 
     acabamentoLuzesAzuis: {
-        addToCartUrl: "/checkout/cart/add?sku=41&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "https://paciello.myvtex.com/moscou-paciello-cor-azul-oculosdegrau/p"
+        addToCartParameters: "sku=41&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/moscou-paciello-cor-azul-oculosdegrau/p"
     }
 }
 
@@ -31,15 +32,7 @@ try {
 
 //functions
 function findLensItemByClassName(className) {
-    try {
-        lensItems.forEach(function (el) {
-            if(el.classList.contains(className)){
-                return el;
-            }
-        });
-    } catch (e) {
-        console.log(e);
-    }
+   
 }
 
 //application:
@@ -71,7 +64,9 @@ DomReady.ready(function () {
 
     lensItems.forEach(function (el) {
         el.addEventListener("click", function () {
-
+            if(el.contains("lente-resina")){
+                alert("lente resina clicado");
+            }
         });
     })
 });
