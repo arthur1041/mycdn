@@ -251,7 +251,7 @@ function setUpLensModalFunctionalities() {
 
         console.log("Adicionando evnt", chooseDecorationBtnMob);
 
-        chooseOtherLensBtnMob.addEventListener("click", function () {
+        chooseOtherLensBtnMob.onclick = function () {
             alert("TESTE")
             lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
             lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
@@ -259,7 +259,7 @@ function setUpLensModalFunctionalities() {
             lensModalDesk.querySelector(".lens-list-wrapper").style.display = "block";
             lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
 
-        });
+        };
 
         console.log("rodoooooooooooooouuuuuuuuuuu")
     }
