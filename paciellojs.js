@@ -249,7 +249,7 @@ function setUpLensModalFunctionalities() {
 
         });
 
-        console.log("Adicionando evnt", chooseDecorationBtnMob);
+        console.log("Adicionando evnt2", chooseDecorationBtnMob);
 
         chooseOtherLensBtnMob.onclick = function () {
             alert("TESTE")
