@@ -65,9 +65,9 @@ function configureSelectedStuff() {
         }
     }
 
-    if(selectedDecorationItems[0]){
-        if(selectedLensItems[0].classList.contains("acabamento-luzes-azuis")){
-            chosenConfiguration.selectedDecoParameters = chooseLensData.lenteResinaAltoIndice.addToCartParameters;  
+    if (selectedDecorationItems[0]) {
+        if (selectedLensItems[0].classList.contains("acabamento-luzes-azuis")) {
+            chosenConfiguration.selectedDecoParameters = chooseLensData.lenteResinaAltoIndice.addToCartParameters;
         } else {
             chosenConfiguration.selectedDecoParameters = null;
         }
@@ -79,7 +79,7 @@ let productImageSrc = null;
 let chooseLensImages = null;
 let orderResume = null;
 let selectedLensItems = null;
-let selectedDecorationItems =  null;
+let selectedDecorationItems = null;
 let chooseDecorationBtn = null;
 let lensItems = null;
 let decorationItems = null;
@@ -112,6 +112,9 @@ DomReady.ready(function () {
     } catch (error) {
         console.log(error);
     }
+
+    selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
+    selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
 
     orderResume = document.querySelectorAll(".choose-lens-box .order-resume");
 
