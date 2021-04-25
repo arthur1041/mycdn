@@ -249,10 +249,8 @@ function setUpLensModalFunctionalities() {
 
         });
 
-        console.log("ATUALIZADO")
         chooseOtherLensBtnMob.forEach(function (el) {
             el.addEventListener("click", function () {
-                alert("TESTE")
                 lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
                 lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
 
