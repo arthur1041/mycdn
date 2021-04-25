@@ -43,7 +43,9 @@ function stringifyPrice(n) {
 function numberfyPrice(n) {
     console.log(n);
     try {
-        return Number(n.replaceAll("R", "").replaceAll("$", "").replaceAll(" ", "").replaceAll(",", "."));
+        return Number(
+            n.replaceAll("R", "").replaceAll("$", "").replaceAll(" ", "").replaceAll(",", ".")
+            );
     } catch (e) {
         console.log(e);
     }
