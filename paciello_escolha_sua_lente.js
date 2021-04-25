@@ -225,7 +225,19 @@ DomReady.ready(function () {
     addToCartButtons = document.querySelectorAll(".choose-lens-box .add-to-cart-btn:not(.continue)");
 
     addToCartButtons.forEach(function (el) {
+        let params = "";
 
+        if(chosenConfiguration.selectedLensParameters){
+            params = chosenConfiguration.selectedLensParameters;
+        } else if (chosenConfiguration.selectedDecoParameters){
+            params = chosenConfiguration.selectedDecoParameters;
+        } else if (chosenConfiguration.selectedLensParameters && chosenConfiguration.selectedDecoParameters){
+            params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
+        }
+
+        fetch(websitedomain + "/checkout/cart/add?"+params).then(function(){
+            fetchProductsFromCart("adding_prod");
+        });
     });
 });
 
