@@ -21,6 +21,10 @@ let chooseLensData = {
     }
 }
 
+let chosenConfiguration = {
+
+}
+
 //adjusts
 try {
     if (document.querySelector(".portal-notify-me-ref .notifyme.sku-notifyme").style.display !== "none") {
@@ -31,9 +35,10 @@ try {
 }
 
 //functions
-function findLensItemByClassName(className) {
+function ClassName(className) {
 
 }
+
 
 //application:
 let productImageSrc = null;
@@ -41,6 +46,7 @@ let chooseLensImages = null;
 let orderResume = null;
 let selectedLensItems = null;
 let chooseDecorationBtn = null;
+let lensItems = null;
 
 DomReady.ready(function () {
     try {
@@ -63,12 +69,20 @@ DomReady.ready(function () {
 
     selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
 
-    chooseDecorationBtn = document.querySelectorAll(".choose-lens-box .prod-btn.choose-decoration-btn"); 
-    
+    lensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item");
+
+    lensItems.forEach(function (el) {
+        el.addEventListener("click", function(){
+            console.log("SELECIONADO", document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected"));
+        });
+    });
+
+    chooseDecorationBtn = document.querySelectorAll(".choose-lens-box .prod-btn.choose-decoration-btn");
+
     chooseDecorationBtn.forEach(function (el) {
-        el.addEventListener("click", function (params) {
+        el.addEventListener("click", function () {
             selectedLensItems = document.querySelectorAll(".choose-lens-box .lens-list .lens-item.selected");
-            console.log(selectedLensItems);
+
         });
     });
 });
