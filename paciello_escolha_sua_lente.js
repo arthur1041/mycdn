@@ -1,4 +1,3 @@
-alert("Hello, world!")
 //adjusts
 try {
     if (document.querySelector(".portal-notify-me-ref .notifyme.sku-notifyme").style.display !== "none") {
