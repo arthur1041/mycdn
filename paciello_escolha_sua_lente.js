@@ -133,15 +133,20 @@ DomReady.ready(function () {
     });
 
     decorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item");
-    
+
     decorationItems.forEach(function (el) {
-        el.addEventListener("click", function(){
+        el.addEventListener("click", function () {
             let selectedItem = document.querySelector(".choose-lens-box .decoration-list .decoration-item.selected");
-            
-            if(selectedItem.classList.contains("acabamento-luzes-azuis")){
-                orderResume.forEach(function(ell){
+
+            if (selectedItem.classList.contains("acabamento-luzes-azuis")) {
+                orderResume.forEach(function (ell) {
                     ell.querySelector(".order-decoration .nome").innerText = chooseLensData.acabamentoLuzesAzuis.name;
                     ell.querySelector(".order-decoration .price").innerText = stringifyPrice(chooseLensData.acabamentoLuzesAzuis.price);
+                });
+            } else {
+                orderResume.forEach(function (ell) {
+                    ell.querySelector(".order-decoration .nome").innerText = "";
+                    ell.querySelector(".order-decoration .price").innerText = "";
                 });
             }
         });
