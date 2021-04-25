@@ -64,7 +64,7 @@ DomReady.ready(function () {
 
     lensItems.forEach(function (el) {
         el.addEventListener("click", function () {
-            if(el.contains("lente-resina")){
+            if(el.classList.contains("lente-resina")){
                 alert("lente resina clicado");
             }
         });
