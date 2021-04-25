@@ -246,6 +246,7 @@ function setUpLensModalFunctionalities() {
 
             lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
             lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
+            lensModalMob.querySelector(".choose-lens-product-wrapper").style.display = "none";
 
         });
 
@@ -253,6 +254,7 @@ function setUpLensModalFunctionalities() {
             el.addEventListener("click", function () {
                 lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
                 lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
+                lensModalMob.querySelector(".choose-lens-product-wrapper").style.display = "none";
 
                 lensModalDesk.querySelector(".lens-list-wrapper").style.display = "block";
                 lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
