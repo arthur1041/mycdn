@@ -1,3 +1,5 @@
+alert("Hello, world!")
+//adjusts
 try {
     if (document.querySelector(".portal-notify-me-ref .notifyme.sku-notifyme").style.display !== "none") {
         document.querySelector(".prod-buttons").innerHTML = "<p class='txt-prod-indisponivel'>Esgotado</p>";
@@ -6,7 +8,7 @@ try {
     console.log(e);
 }
 
-//imagens do modal de desk e mobile
+//application:
 let productImageSrc = null;
 let chooseLensImages = null;
 let orderResume = null;
