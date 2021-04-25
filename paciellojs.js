@@ -260,8 +260,6 @@ function setUpLensModalFunctionalities() {
                 lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
             });
         });
-
-        console.log("rodoooooooooooooouuuuuuuuuuu")
     }
 }
 
