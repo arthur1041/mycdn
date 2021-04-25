@@ -264,7 +264,9 @@ function setUpLensModalFunctionalities() {
         });
 
         continueToResumeBtn.addEventListener("click", function(){
-            alert("funcionando");
+            lensModalMob.querySelector(".lens-list-wrapper").style.display = "none";
+            lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
+            lensModalMob.querySelector(".choose-lens-product-wrapper").style.display = "block";
         });
     }
 }
