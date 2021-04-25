@@ -1,6 +1,8 @@
 // /checkout/cart/add?
 //data
 let chooseLensData = {
+    oculosModelo: null,
+    oculosPreco: null,
     lenteResina: {
         addToCartParameters: "sku=117&qty=1&seller=1&redirect=true&sc=1",
         productUrl: "/helsinki-paciello-cor-offwhitebege-oculosdesol/p",
@@ -50,12 +52,29 @@ let lensItems = null;
 
 DomReady.ready(function () {
     try {
+        chooseLensData.oculosModelo = vtxctx.categoryName;    
+    } catch (error) {
+        console.log(error);
+    }
+
+    try {
+        chooseLensData.oculosPreco = document.querySelector(".price-info .price .regular").innerText;        
+    } catch (error) {
+        console.log(error);
+    }
+
+    try {
         productImageSrc = document.querySelector(".product-grid-container .product-images .image-wrapper img").getAttribute("src");
     } catch (error) {
         console.log(error);
     }
 
     orderResume = document.querySelectorAll(".choose-lens-box .order-resume");
+
+    orderResume.forEach(function(el){
+        el.querySelector(".order-model .nome").innerText = chooseLensData.oculosModelo;
+        el.querySelector(".order-model .price").innerText = chooseLensData.oculosPreco;
+    });
 
     chooseLensImages = document.querySelectorAll(".choose-lens-box .product .product-image");
 
