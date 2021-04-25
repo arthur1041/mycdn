@@ -125,7 +125,7 @@ function setUpLensModalFunctionalities() {
     let chooseDecorationBtnMob = lensModalMob.querySelector(".choose-decoration-btn");
 
     let chooseOtherLensBtnDesk = lensModalDesk.querySelector(".choose-other-lens-btn");
-    let chooseOtherLensBtnMob = lensModalMob.querySelector(".choose-other-lens-btn");
+    let chooseOtherLensBtnMob = lensModalMob.querySelectorAll(".choose-other-lens-btn");
 
     if (lensModalDesk && lensModalMob) {
         if (lensItemsDesk) {
@@ -249,14 +249,16 @@ function setUpLensModalFunctionalities() {
 
         });
 
-        chooseOtherLensBtnMob.addEventListener("click", function () {
-            alert("TESTE")
-            lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
-            lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
+        console.log("ATUALIZADO")
+        chooseOtherLensBtnMob.forEach(function (el) {
+            el.addEventListener("click", function () {
+                alert("TESTE")
+                lensModalMob.querySelector(".lens-list-wrapper").style.display = "block";
+                lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
 
-            lensModalDesk.querySelector(".lens-list-wrapper").style.display = "block";
-            lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
-
+                lensModalDesk.querySelector(".lens-list-wrapper").style.display = "block";
+                lensModalDesk.querySelector(".decoration-list-wrapper").style.display = "none";
+            });
         });
 
         console.log("rodoooooooooooooouuuuuuuuuuu")
