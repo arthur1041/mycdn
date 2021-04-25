@@ -171,7 +171,7 @@ function setUpLensModalFunctionalities() {
                         lensItemsDesk[i].classList.add("selected");
                     } else {
                         lensItemsMob[i].classList.remove("selected");
-                        lensItemsMob[i].classList.remove("selected");
+                        lensItemsDesk[i].classList.remove("selected");
                     }
                 });
             }
