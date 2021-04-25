@@ -66,7 +66,7 @@ function configureSelectedStuff() {
     }
 
     if (selectedDecorationItems[0]) {
-        if (selectedLensItems[0].classList.contains("acabamento-luzes-azuis")) {
+        if (selectedDecorationItems[0].classList.contains("acabamento-luzes-azuis")) {
             chosenConfiguration.selectedDecoParameters = chooseLensData.lenteResinaAltoIndice.addToCartParameters;
         } else {
             chosenConfiguration.selectedDecoParameters = null;
