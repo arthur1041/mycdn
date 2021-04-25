@@ -45,7 +45,7 @@ function numberfyPrice(n) {
     try {
         return Number(
             n.replaceAll("R", "").replaceAll("$", "").replaceAll(" ", "").replaceAll(",", ".")
-            );
+        );
     } catch (e) {
         console.log(e);
     }
@@ -144,12 +144,16 @@ DomReady.ready(function () {
             selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
 
             orderResume.forEach(function (ell) {
-                ell.querySelector(".order-total .price").innerText =
-                    stringifyPrice(
-                        numberfyPrice(chooseLensData.oculosPreco) +
-                        numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
-                        numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
-                    );
+                try {
+                    ell.querySelector(".order-total .price").innerText =
+                        stringifyPrice(
+                            numberfyPrice(chooseLensData.oculosPreco) +
+                            numberfyPrice(orderResume[0].querySelector(".order-lens .price").innerText) +
+                            numberfyPrice(orderResume[0].querySelector(".order-decoration .price").innerText)
+                        );
+                } catch (e){
+                    console.log(e)
+                }
             });
         });
     });
@@ -175,12 +179,16 @@ DomReady.ready(function () {
             selectedDecorationItems = document.querySelectorAll(".choose-lens-box .decoration-list .decoration-item.selected");
 
             orderResume.forEach(function (ell) {
-                ell.querySelector(".order-total .price").innerText =
-                    stringifyPrice(
-                        numberfyPrice(chooseLensData.oculosPreco) +
-                        numberfyPrice(orderResume[0].querySelector(".order-lens .price")) +
-                        numberfyPrice(orderResume[0].querySelector(".order-decoration .price"))
-                    );
+                try {
+                    ell.querySelector(".order-total .price").innerText =
+                        stringifyPrice(
+                            numberfyPrice(chooseLensData.oculosPreco) +
+                            numberfyPrice(orderResume[0].querySelector(".order-lens .price").innerText) +
+                            numberfyPrice(orderResume[0].querySelector(".order-decoration .price").innerText)
+                        );
+                } catch (e){
+                    console.log(e)
+                }
             });
         });
     });
