@@ -85,6 +85,7 @@ let lensItems = null;
 let decorationItems = null;
 let addToCartButtons = null;
 let productAddToCartParams = null;
+let closeLensModalBtn = null;
 
 DomReady.ready(function () {
     //adjusts
@@ -225,6 +226,8 @@ DomReady.ready(function () {
 
     addToCartButtons = document.querySelectorAll(".choose-lens-box .add-to-cart-btn:not(.continue)");
 
+    closeLensModalBtn = document.querySelector(".choose-lens-box-close-btn");
+
     addToCartButtons.forEach(function (el) {
         el.addEventListener("click", function () {
             let params = "";
@@ -256,6 +259,7 @@ DomReady.ready(function () {
             fetch(websitedomain + productAddToCartParams + "&" + params).then(function (response) {
                 console.log(response);
                 fetchProductsFromCart("adding_prod");
+                closeLensModalBtn.click();
             });
         });
     });
