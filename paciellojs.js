@@ -945,7 +945,7 @@ DomReady.ready(function () {
             autoplay: true,
             dots: true,
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             responsive: [
                 {
