@@ -6,7 +6,7 @@ function htd(code) {
     const parser = new DOMParser();
     return parser.parseFromString(code, "text/html").querySelector("body").firstChild;
 }
-//mexendo aquiiiiii
+//Ativar prateleiras
 function configurePrateleiras() {
     let prateleirasAndSliders = [
         {
@@ -14,7 +14,7 @@ function configurePrateleiras() {
             slider: document.querySelector(".prateleira-modelos-paciello-mobile + .slider")
         },
         {
-            prateleira: document.querySelectorAll(".prateleira-modelos-paciello"),
+            prateleira: document.querySelector(".prateleira-modelos-paciello"),
             slider: document.querySelector(".prateleira-modelos-paciello + .slider")
         },
         {
@@ -1006,8 +1006,11 @@ DomReady.ready(function () {
         });
     }
 
-
-    setUpLensModalFunctionalities();
+    try{
+        setUpLensModalFunctionalities();
+    } catch (e){
+        console.log(e);
+    }
 
     document.querySelectorAll(".minicart .continuar-comprando-btn").forEach(function (el) {
         try {
