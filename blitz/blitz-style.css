@@ -827,3 +827,57 @@ body {
 body.device-mobile-optimized #shopify-section-footer{
     position: relative;
 }
+
+
+body.device-mobile-optimized header {
+    position: relative;
+    z-index: 1000;
+  }
+  body.device-mobile-optimized #shopify-section-footer {
+    position: relative;
+    z-index: 1000;
+  }
+  body.device-mobile-optimized grid-item.links * {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  body.device-mobile-optimized .grid-item.links .footer-socials * {
+    color: black;
+  }
+  body.device-mobile-optimized footer:not(.cart-footer) input#NewsletterEmail {
+    border: 3px solid white;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 13px;
+    margin-left: 10px;
+    padding-left: 15px;
+  }
+  body.device-mobile-optimized footer:not(.cart-footer) {
+    padding: 40px 0;
+  }
+  body.device-mobile-optimized .newsletter-title {
+    text-align: left;
+    color: #C0BBBB;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  body.device-mobile-optimized .about-footer {
+    margin-top: 20px;
+  }
+  body.device-mobile-optimized .btn--newsletter__submit {
+    color: white !important;
+    font-size: 12px;
+  }
+  body.device-mobile-optimized .grid-item.links * {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  body.device-mobile-optimized .grid-item.links .footer-socials * {
+    color: black;
+  }
+  body.device-mobile-optimized #comp-kar4cxeliframe {
+    display: none !important;
+  }
