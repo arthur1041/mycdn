@@ -244,7 +244,7 @@ DomReady.ready(function () {
                 params = chosenConfiguration.selectedDecoParameters;
             }
 
-            console.log(params);
+            console.log(productAddToCartParams +"&"+ params);
 
             fetch(websitedomain + productAddToCartParams +"&"+ params).then(function (response) {
                 console.log(response);
