@@ -945,8 +945,8 @@ DomReady.ready(function () {
             autoplay: true,
             dots: true,
             infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             responsive: [
                 {
                     breakpoint: 768,
