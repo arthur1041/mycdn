@@ -230,12 +230,12 @@ DomReady.ready(function () {
 
             configureSelectedStuff();
 
-            if (chosenConfiguration.selectedLensParameters) {
+            if (chosenConfiguration.selectedLensParameters && chosenConfiguration.selectedDecoParameters) {
+                params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
+            } else if (chosenConfiguration.selectedLensParameters) {
                 params = chosenConfiguration.selectedLensParameters;
             } else if (chosenConfiguration.selectedDecoParameters) {
                 params = chosenConfiguration.selectedDecoParameters;
-            } else if (chosenConfiguration.selectedLensParameters && chosenConfiguration.selectedDecoParameters) {
-                params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
             }
 
             console.log(params);
