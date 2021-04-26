@@ -941,22 +941,22 @@ DomReady.ready(function () {
     }
 
     try {
-        // $(".pictures-gallery-slider").slick({
-        //     autoplay: true,
-        //     dots: true,
-        //     infinite: true,
-        //     slidesToShow: 3,
-        //     slidesToScroll: 3,
-        //     responsive: [
-        //         {
-        //             breakpoint: 768,
-        //             settings: {
-        //                 slidesToShow: 1,
-        //                 slidesToScroll: 1,
-        //             },
-        //         },
-        //     ],
-        // });
+        $(".pictures-gallery-slider").slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        });
     } catch (e) { }
 
     if (document.querySelector(".pagina-produto")) {
