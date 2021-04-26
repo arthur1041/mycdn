@@ -238,6 +238,8 @@ DomReady.ready(function () {
                 params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
             }
 
+            console.log(params);
+
             fetch(websitedomain + "/checkout/cart/add?" + params).then(function (response) {
                 console.log(response);
                 fetchProductsFromCart("adding_prod");
