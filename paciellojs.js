@@ -555,7 +555,7 @@ DomReady.ready(function () {
     setUpBreadCrumb();
 
     //Fazendo galeria
-    if (document.querySelector()) {
+    if (document.querySelector(".pagina-produto")) {
         imgsGaleria = document.querySelectorAll("img[alt='Galeria']");
 
         imgsGaleria.forEach(function (el) {
