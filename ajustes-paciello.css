@@ -118,3 +118,7 @@ section.carousel-section {
         z-index: 21;
     }
 }
+
+.login .marcas-section {
+    display: none !important;
+}

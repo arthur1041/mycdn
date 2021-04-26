@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <vtex.cmc:productPageTitle />
+    </title>
+
+    <!-- Styles aqui -->
+    <vtex:template id="paciello-styles" />
+</head>
+
+<body style="opacity: 0;">
+    <!-- header aqui -->
+    <!-- minicart aqui -->
+    <!-- page ovely aqui -->
+    <vtex:template id="paciello-header" />
+
+    <main>
+        <section class="breadcrumb-section">
+            <div class="container">
+                <div class="breadcrumb">
+
+                </div>
+
+                <div class="vtex-breadcrumb-wrapper">
+                    <vtex.cmc:breadCrumb />
+                </div>
+
+            </div>
+        </section>
+        <section class="product-section">
+            <div class="container">
+                <div class="product-grid-container">
+                    <div class="product-images">
+                        <div class="product-slider">
+
+                        </div>
+                        <div class="product-slider-nav">
+
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1 class="prod-title">
+                            <vtex.cmc:productName />
+                        </h1>
+                        <p class="brand">
+                            <vtex.cmc:brandName />
+                        </p>
+                        <p class="short-description">
+                            <vtex.cmc:productDescriptionShort />
+                        </p>
+                        <div class="price-info">
+
+                        </div>
+                        <vtex.cmc:skuPrice />
+                        <div class="prod-buttons">
+                            <a>
+                                <div class="prod-btn add-to-cart-button"><span>Adicionar ao Carrinho</span></div>
+                            </a>
+                            <a href="#">
+                                <div class="prod-btn buy-without-lens"><span>Comprar sem Lentes</span></div>
+                            </a>
+                            <!-- btn-teste -->
+                            <vtex.cmc:BuyButton />
+                        </div>
+                    </div>
+                    <div class="vtex-imagens-produto">
+                        <vtex.cmc:ProductImage zoom="on" />
+                    </div>
+                    <div class="testando" style="display:none !important">
+                        <vtex.cmc:ProductImage />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pictures-gallery-section">
+            <div class="container">
+                <div class="section-title">
+                    <p class="title">Galeria de Fotos</p>
+                    <div class="border-container">
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <div class="pictures-gallery-slider">
+                    <img src="/arquivos/picture1.jpg" alt="" />
+                    <img src="/arquivos/picture1.jpg" alt="" />
+                    <img src="/arquivos/picture1.jpg" alt="" />
+                    <img src="/arquivos/picture1.jpg" alt="" />
+                    <img src="/arquivos/picture1.jpg" alt="" />
+                    <img src="/arquivos/picture1.jpg" alt="" />
+                </div>
+            </div>
+        </section>
+        <section class="product-details-section">
+            <div class="container">
+                <div class="product-details-controller">
+                    <span class="details-btn" aria-details="description">
+                        Descrição
+                    </span>
+                    <span class="details-btn" aria-details="specifications">
+                        Características
+                    </span>
+                </div>
+                <div class="product-details">
+                    <div class="product-description prod-details-item open" aria-details="description">
+                        <vtex.cmc:ProductDescription />
+                        <!-- <p style="font-size: 18px;text-align: justify;">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p style="font-size: 18px;text-align: justify;">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p> -->
+                    </div>
+                    <div class="product-specifications prod-details-item" aria-details="specifications">
+                        <ul>
+                            <li>
+                                <p style="font-size: 18px;text-align: justify;">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </li>
+                            <li>
+                                <p style="font-size: 18px;text-align: justify;">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                    qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modelo-360-section">
+            <div class="container">
+                <div class="section-title">
+                    <p class="title">Modelo 360</p>
+                    <div class="border-container">
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="modelo-360" src="/arquivos/oculos-360.jpg" />
+                </div>
+            </div>
+        </section>
+        <section class="products-section novidades-section has-small-slider">
+            <div class="container">
+                <div class="section-title">
+                    <p class="title">Novidades</p>
+                    <div class="border-container">
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <div class="prateleira-produtos prateleira-produtos-relacionados-mobile">
+                    <vtex:contentPlaceHolder id="Prateleira-Relacionados-Mobile" />
+                </div>
+                <div class="slider mobile">
+
+                </div>
+                <div class="prateleira-produtos prateleira-produtos-relacionados">
+                    <vtex:contentPlaceHolder id="Prateleira-Relacionados" />
+                </div>
+                <div class="slider desktop">
+
+                </div>
+            </div>
+        </section>
+        <section class="instagram-section">
+            <div class="container">
+                <div class="section-title">
+                    <p class="title">Siga a gente no nosso <b>instagram</b></p>
+                    <div class="border-container">
+                        <div class="border"></div>
+                    </div>
+                </div>
+
+                <p class="username"><b>@nossoinstagram</b></p>
+
+                <div class="slider-two-social" id="instagram-images"></div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div>
+                    <p class="title">Assine nossa newsletter</p>
+                    <p class="description">Fique por dentro de novidades e promoções</p>
+                </div>
+                <form action="#" method="GET">
+                    <input type="text" placeholder="DIGITE SEU EMAIL" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div class="choose-lens-modal-desktop">
+        <div class="container">
+            <div class="choose-lens-box">
+                <div>
+                    <div class="product">
+                        <h1 class="product-title">Escolha de lentes</h1>
+                        <img class="product-image" src="http://placehold.it/650x262" />
+                        <p class="product-name">
+                            <vtex.cmc:productName />
+                        </p>
+                    </div>
+                    <div class="order-resume">
+                        <p class="order-title">Resumo do pedido</p>
+                        <div class="order-model"><span class="nome"></span><span class="price"></span></div>
+                        <div class="order-lens"><span class="nome"></span><span class="price"></span></div>
+                        <div class="order-decoration"><span class="nome"></span><span class="price"></span></div>
+                        <div class="order-total"><span><b>TOTAL</b></span><span class="price"></span></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="lens-list-wrapper" style="display: blcok">
+                        <p class="lens-list-title">Lente</p>
+                        <ul class="lens-list">
+                            <li class="lens-item lente-resina">
+                                <img src="/arquivos/lente_resina.png" alt="" />
+                                <div class="lens-title-description-wrapper">
+                                    <p class="lens-title">Resina</p>
+                                    <p class="lens-description">
+                                        Lentes com espessura padrão para miopia e hipermetropia +/- 2,75 e estigmatismo
+                                        -2,00.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="lens-item lente-policarbonato">
+                                <img src="/arquivos/lente_policarbonato.png" alt="" />
+                                <div class="lens-title-description-wrapper">
+                                    <p class="lens-title">Policarbonato</p>
+                                    <p class="lens-description">
+                                        Lentes mais finas, leves e resistentes para miopia e hipermetropia +/- 4,00 e
+                                        estigmatismo até -2,00.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="lens-item lente-resina-alto-indice">
+                                <img src="/arquivos/lente_resina_alto_indice.png" alt="" />
+                                <div class="lens-title-description-wrapper">
+                                    <p class="lens-title">Resina de Alto Índice</p>
+                                    <p class="lens-description">
+                                        Lentes mais finas e mais leves para graus mais altos. Indicadas para miopia
+                                        -5,00 até -6,50 e hipermetropia +5,00 até +6,50 com astigmatismo.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="lens-item lente-sem-grau selected">
+                                <img src="/arquivos/lente_sem_grau.png" alt="" />
+                                <div class="lens-title-description-wrapper">
+                                    <p class="lens-title">Sem Grau</p>
+                                    <p class="lens-description">
+                                        Para quem quer curtir usar um óculos como acessório mas não possui grau.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="prod-btn choose-decoration-btn"><span>Escolher Acabamento</span></div>
+                    </div>
+                    <div class="decoration-list-wrapper" style="display: none;">
+                        <p class="decoration-list-title">Acabamento</p>
+                        <ul class="decoration-list">
+                            <li class="decoration-item acabamento-luzes-azuis">
+                                <div class="decoration-title-description-wrapper">
+                                    <p class="decoration-title">Tratamento Proteção Luzes Azuis</p>
+                                    <p class="decoration-description">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="decoration-item acabamento-sem-acabamento selected">
+                                <div class="decoration-title-description-wrapper">
+                                    <p class="decoration-title">Sem Acabamento</p>
+                                    <p class="decoration-description">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- <li class="decoration-item">
+                                <div class="decoration-title-description-wrapper">
+                                    <p class="decoration-title">Acabamento</p>
+                                    <p class="decoration-description">
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                        aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                            </li> -->
+                        </ul>
+
+                        <div class="prod-btn add-to-cart-btn"><span>Adicionar ao carrinho</span></div>
+                        <div class="prod-btn choose-other-lens-btn"><span>Escolher outra lente</span></div>
+                    </div>
+                </div>
+                <div class="choose-lens-box-close-btn"><svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.4866 11.6116C13.4866 11.3326 13.375 11.0536 13.1741 10.8527L9.89286 7.57143L13.1741 4.29018C13.375 4.08929 13.4866 3.81027 13.4866 3.53125C13.4866 3.25223 13.375 2.97321 13.1741 2.77232L11.6562 1.25446C11.4554 1.05357 11.1763 0.941963 10.8973 0.941963C10.6183 0.941963 10.3393 1.05357 10.1384 1.25446L6.85714 4.53571L3.57589 1.25446C3.375 1.05357 3.09598 0.941963 2.81696 0.941963C2.53795 0.941963 2.25893 1.05357 2.05804 1.25446L0.540179 2.77232C0.339286 2.97321 0.227679 3.25223 0.227679 3.53125C0.227679 3.81027 0.339286 4.08929 0.540179 4.29018L3.82143 7.57143L0.540179 10.8527C0.339286 11.0536 0.227679 11.3326 0.227679 11.6116C0.227679 11.8906 0.339286 12.1696 0.540179 12.3705L2.05804 13.8884C2.25893 14.0893 2.53795 14.2009 2.81696 14.2009C3.09598 14.2009 3.375 14.0893 3.57589 13.8884L6.85714 10.6071L10.1384 13.8884C10.3393 14.0893 10.6183 14.2009 10.8973 14.2009C11.1763 14.2009 11.4554 14.0893 11.6562 13.8884L13.1741 12.3705C13.375 12.1696 13.4866 11.8906 13.4866 11.6116Z"
+                            fill="#9A9A9A" />
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+    <div class="choose-lens-modal-mobile">
+        <div class="choose-lens-box">
+            <div class="choose-lens-header">
+                <p>Escolha de lentes</p>
+            </div>
+            <div class="container">
+                <div class="choose-lens-product-wrapper" style="display: none;">
+                    <div class="product">
+                        <img class="product-image" src="http://placehold.it/650x262" />
+                        <p class="product-name">
+                            <vtex.cmc:productName />
+                        </p>
+                    </div>
+                    <div class="order-resume">
+                        <p class="order-title">Resumo do pedido</p>
+                        <div class="order-model"><span class="nome"></span><span class="price"></span></div>
+                        <div class="order-lens"><span class="nome"></span><span class="price"></span></div>
+                        <div class="order-decoration"><span class="nome"></span><span class="price"></span></div>
+                        <div class="order-total"><span><b>TOTAL</b></span><span class="price"></span></div>
+                    </div>
+                    <div class="prod-btn add-to-cart-btn"><span>Adicionar ao carrinho</span></div>
+                    <div class="prod-btn choose-other-lens-btn"><span>Escolher outra lente</span></div>
+                </div>
+                <div class="lens-list-wrapper" style="display: block">
+                    <p class="lens-list-title">Lente</p>
+                    <ul class="lens-list">
+                        <li class="lens-item lente-resina">
+                            <img src="/arquivos/lente_resina.png" alt="" />
+                            <div class="lens-title-description-wrapper">
+                                <p class="lens-title">Resina</p>
+                                <p class="lens-description">
+                                    Lentes com espessura padrão para miopia e hipermetropia +/- 2,75 e estigmatismo
+                                    -2,00.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="lens-item lente-policarbonato">
+                            <img src="/arquivos/lente_policarbonato.png" alt="" />
+                            <div class="lens-title-description-wrapper">
+                                <p class="lens-title">Policarbonato</p>
+                                <p class="lens-description">
+                                    Lentes mais finas, leves e resistentes para miopia e hipermetropia +/- 4,00 e
+                                    estigmatismo até -2,00.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="lens-item lente-resina-alto-indice">
+                            <img src="/arquivos/lente_resina_alto_indice.png" alt="" />
+                            <div class="lens-title-description-wrapper">
+                                <p class="lens-title">Resina de Alto Índice</p>
+                                <p class="lens-description">
+                                    Lentes mais finas e mais leves para graus mais altos. Indicadas para miopia -5,00
+                                    até -6,50 e hipermetropia +5,00 até +6,50 com astigmatismo.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="lens-item lente-sem-grau selected">
+                            <img src="/arquivos/lente_sem_grau.png" alt="" />
+                            <div class="lens-title-description-wrapper">
+                                <p class="lens-title">Sem Grau</p>
+                                <p class="lens-description">
+                                    Para quem quer curtir usar um óculos como acessório mas não possui grau.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="prod-btn choose-decoration-btn"><span>Continuar</span></div>
+                </div>
+                <div class="decoration-list-wrapper" style="display: none;">
+                    <p class="decoration-list-title">Acabamento</p>
+                    <ul class="decoration-list">
+                        <li class="decoration-item acabamento-luzes-azuis">
+                            <div class="decoration-title-description-wrapper">
+                                <p class="decoration-title">Tratamento Proteção Luzes Azuis</p>
+                                <p class="decoration-description">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="decoration-item acabamento-sem-acabamento selected">
+                            <div class="decoration-title-description-wrapper">
+                                <p class="decoration-title">Sem Acabamento</p>
+                                <p class="decoration-description">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- <li class="decoration-item">
+                            <div class="decoration-title-description-wrapper">
+                                <p class="decoration-title">Acabamento</p>
+                                <p class="decoration-description">
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    <div class="prod-btn add-to-cart-btn continue"><span>Continuar</span></div>
+                    <div class="prod-btn choose-other-lens-btn"><span>Voltar</span></div>
+                </div>
+            </div>
+            <div class="choose-lens-box-close-btn"><svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.4866 11.6116C13.4866 11.3326 13.375 11.0536 13.1741 10.8527L9.89286 7.57143L13.1741 4.29018C13.375 4.08929 13.4866 3.81027 13.4866 3.53125C13.4866 3.25223 13.375 2.97321 13.1741 2.77232L11.6562 1.25446C11.4554 1.05357 11.1763 0.941963 10.8973 0.941963C10.6183 0.941963 10.3393 1.05357 10.1384 1.25446L6.85714 4.53571L3.57589 1.25446C3.375 1.05357 3.09598 0.941963 2.81696 0.941963C2.53795 0.941963 2.25893 1.05357 2.05804 1.25446L0.540179 2.77232C0.339286 2.97321 0.227679 3.25223 0.227679 3.53125C0.227679 3.81027 0.339286 4.08929 0.540179 4.29018L3.82143 7.57143L0.540179 10.8527C0.339286 11.0536 0.227679 11.3326 0.227679 11.6116C0.227679 11.8906 0.339286 12.1696 0.540179 12.3705L2.05804 13.8884C2.25893 14.0893 2.53795 14.2009 2.81696 14.2009C3.09598 14.2009 3.375 14.0893 3.57589 13.8884L6.85714 10.6071L10.1384 13.8884C10.3393 14.0893 10.6183 14.2009 10.8973 14.2009C11.1763 14.2009 11.4554 14.0893 11.6562 13.8884L13.1741 12.3705C13.375 12.1696 13.4866 11.8906 13.4866 11.6116Z"
+                        fill="#9A9A9A" />
+                </svg></div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <vtex:template id="paciello-footer" />
+
+    <!-- scripts aqui -->
+    <vtex:template id="paciello-scripts" />
+</body>
+
+</html>

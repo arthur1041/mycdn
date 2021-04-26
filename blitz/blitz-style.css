@@ -897,3 +897,7 @@ body.device-mobile-optimized #comp-kar4cxeliframe {
         margin-left: -6px;
     }
 }
+
+#portal-b11255bb-fb2b-4689-b394-6029f534d310 > div > div.Window__WindowComponent-sc-17wvysh-1.exIXPt > div:nth-child(5) {
+    display: none !important;
+}

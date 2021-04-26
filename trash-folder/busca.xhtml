@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsabilidade Social</title>
+
+    <!-- Styles aqui -->
+    <vtex:template id="paciello-styles" />
+</head>
+
+<body style="opacity: 0">
+    <!-- header aqui -->
+    <!-- minicart aqui -->
+    <!-- page ovely aqui -->
+    <vtex:template id="paciello-header" />
+
+    <main>
+        <section class="carousel-section">
+            <div class="carousel-mobile">
+                <a href="#"><img src="/arquivos/responsabilidade-social-banner.png" /></a>
+            </div>
+            <div class="carousel-desktop">
+                <a href="#"><img src="/arquivos/category_image_paciello.png" /></a>
+            </div>
+            <div class="category-name-section">
+                <span class="category-name">
+                    <vtex.cmc:searchTitle />
+                </span>
+            </div>
+        </section>
+        <section class="breadcrumb-section">
+            <div class="container">
+                <div class="breadcrumb">
+                   
+                </div>
+
+                <div class="vtex-breadcrumb-wrapper">
+                    <vtex.cmc:breadCrumb />
+                </div>
+            </div>
+        </section>
+        <div class="fetched-filters-wrapper">
+            <vtex.cmc:searchNavigator />
+        </div>
+        <section class="category-main-section">
+            <div class="container">
+                <div class="grid-item hidden-mobile">
+                    <div class="filter-wrapper">
+                        <h1 class="filter-title">Filtre sua busca</h1>
+                        <ul>
+                            <li class="filter-item item-title">Marcas</li>
+                            <li class="filter-item"><a href="#">Marca 1</a></li>
+                            <li class="filter-item"><a href="#">Marca 2</a></li>
+                            <li class="filter-item"><a href="#">Marca 3</a></li>
+                            <li class="filter-item"><a href="#">Marca 4</a></li>
+                        </ul>
+                        <ul>
+                            <li class="filter-item item-title">Marcas</li>
+                            <li class="filter-item"><a href="#">Marca 1</a></li>
+                            <li class="filter-item"><a href="#">Marca 2</a></li>
+                            <li class="filter-item"><a href="#">Marca 3</a></li>
+                            <li class="filter-item"><a href="#">Marca 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="mobile-controllers-grid">
+                        <div class="filter-wrapper"></div>
+                        <form class="order-wrapper">
+                            <span>ORDENAR POR: </span>
+
+                        </form>
+                    </div>
+                    <div class="fetched-products-wrapper">
+                        <vtex.cmc:searchResult layout="576005d9-adf1-47d6-9661-6650aaf14644" itemCount="12"
+                            columnCount="3" />
+                    </div>
+                    <div class="category-product-listing">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //CORPO -->
+        <section class="instagram-section">
+            <div class="container">
+                <div class="section-title">
+                    <p class="title">Siga a gente no nosso <b>instagram</b></p>
+                    <div class="border-container">
+                        <div class="border"></div>
+                    </div>
+                </div>
+
+                <p class="username"><b>@nossoinstagram</b></p>
+
+                <div class="slider-two-social" id="instagram-images"></div>
+            </div>
+        </section>
+        <section class="newsletter-section">
+            <div class="container">
+                <div>
+                    <p class="title">Assine nossa newsletter</p>
+                    <p class="description">Fique por dentro de novidades e promoções</p>
+                </div>
+                <form action="#" method="GET">
+                    <input type="text" placeholder="DIGITE SEU EMAIL" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <vtex:template id="paciello-footer" />
+
+    <!-- scripts aqui -->
+    <vtex:template id="paciello-scripts" />
+</body>
+
+</html>
