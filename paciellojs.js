@@ -62,14 +62,17 @@ function configureProductImages() {
     let productSliderNav = document.querySelector(".product-slider-nav");
     try {
         document.querySelectorAll(".apresentacao .thumbs li a").forEach(function (el) {
-            productSliderNav.append(htd(`
-            <img class="product-image" src="${el.getAttribute("zoom")}" />
-        `));
-            productSlider.appendChild(htd(`
-        <div class="image-wrapper">
-            <img class="product-image" src="${el.getAttribute("zoom")}" />
-        </div>
-        `));
+            if (el.querySelector("img").getAttribute("alt").trim().toLowerCase() != "galeria") {
+                productSliderNav.append(htd(`
+                    <img class="product-image" src="${el.getAttribute("zoom")}" />
+                `));
+
+                productSlider.appendChild(htd(`
+                    <div class="image-wrapper">
+                        <img class="product-image" src="${el.getAttribute("zoom")}" />
+                    </div>
+                `));
+            }
         });
     } catch (error) {
         console.log(error);
@@ -1006,9 +1009,9 @@ DomReady.ready(function () {
         });
     }
 
-    try{
+    try {
         setUpLensModalFunctionalities();
-    } catch (e){
+    } catch (e) {
         console.log(e);
     }
 
