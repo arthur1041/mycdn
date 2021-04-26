@@ -4,29 +4,29 @@ let chooseLensData = {
     oculosModelo: null,
     oculosPreco: null,
     lenteResina: {
-        addToCartParameters: "sku=117&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/helsinki-paciello-cor-offwhitebege-oculosdesol/p",
-        price: 14.96,
+        addToCartParameters: "sku=16635&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/resina-1-56-visao-simples-ar/p",
+        price: 149,
         name: "Resina"
     },
     lentePolicarbonato: {
-        addToCartParameters: "sku=115&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/cannes-paciello-cor-branca-oculosdegrau/p",
-        price: 14.96,
+        addToCartParameters: "sku=16637&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/resina-1-59-visao-simples-ar/p",
+        price: 249,
         name: "Policarbonato"
     },
 
     lenteResinaAltoIndice: {
-        addToCartParameters: "sku=55&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/vancouver-paciello-cor-mel-lentesg15-oculosdesol/p",
-        price: 19.60,
+        addToCartParameters: "sku=16638&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/resina-1-67-alto-indice-v-s--ar/p",
+        price: 549,
         name: "Resina de Alto Índice"
     },
 
     acabamentoLuzesAzuis: {
-        addToCartParameters: "sku=41&qty=1&seller=1&redirect=true&sc=1",
-        productUrl: "/moscou-paciello-cor-azul-oculosdegrau/p",
-        price: 11.74,
+        addToCartParameters: "sku=16636&qty=1&seller=1&redirect=true&sc=1",
+        productUrl: "/protecao-luzes-azuis/p",
+        price: 50,
         name: "Tratamento Proteção Luzes Azuis"
     }
 }
