@@ -820,4 +820,5 @@ body {
 .device-mobile-optimized header {
     z-index: 10;
     position: relative;
+    background-color: transparent;
 }
