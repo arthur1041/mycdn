@@ -14,12 +14,24 @@ function configurePrateleiras() {
             slider: document.querySelector(".prateleira-modelos-paciello-mobile + .slider")
         },
         {
-            prateleira: document.querySelector(".prateleira-modelos-paciello"),
+            prateleira: document.querySelectorAll(".prateleira-modelos-paciello"),
             slider: document.querySelector(".prateleira-modelos-paciello + .slider")
         },
         {
-            prateleira: document.querySelector(".prateleira-special-partners"),
-            slider: document.querySelector(".prateleira-special-partners + .slider")
+            prateleira: document.querySelectorAll(".prateleira-special-partners")[0],
+            slider: document.querySelectorAll(".prateleira-special-partners + .slider")[0]
+        },
+        {
+            prateleira: document.querySelectorAll(".prateleira-special-partners")[1],
+            slider: document.querySelectorAll(".prateleira-special-partners + .slider")[1]
+        },
+        {
+            prateleira: document.querySelectorAll(".prateleira-special-partners")[2],
+            slider: document.querySelectorAll(".prateleira-special-partners + .slider")[2]
+        },
+        {
+            prateleira: document.querySelectorAll(".prateleira-special-partners")[3],
+            slider: document.querySelectorAll(".prateleira-special-partners + .slider")[3]
         },
         {
             prateleira: document.querySelector(".prateleira-produtos-relacionados-mobile"),
