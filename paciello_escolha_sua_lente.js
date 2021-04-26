@@ -246,7 +246,7 @@ DomReady.ready(function () {
 
             console.log(params);
 
-            fetch(websitedomain + productAddToCartParams + params).then(function (response) {
+            fetch(websitedomain + productAddToCartParams +"&"+ params).then(function (response) {
                 console.log(response);
                 fetchProductsFromCart("adding_prod");
             });
