@@ -6,7 +6,7 @@ function htd(code) {
     const parser = new DOMParser();
     return parser.parseFromString(code, "text/html").querySelector("body").firstChild;
 }
-
+//mexendo aquiiiiii
 function configurePrateleiras() {
     let prateleirasAndSliders = [
         {
@@ -29,6 +29,9 @@ function configurePrateleiras() {
             prateleira: document.querySelector(".prateleira-produtos-relacionados"),
             slider: document.querySelector(".prateleira-produtos-relacionados + .slider")
         },
+        {
+
+        }
 
     ]
     prateleirasAndSliders.forEach(function (el) {
@@ -863,23 +866,23 @@ DomReady.ready(function () {
         console.log(e);
     }
     try {
-        (function () {
-            new InstagramFeed({
-                'username': 'paciello.ipanema',
-                'container': document.getElementById("instagram-images"),
-                'display_profile': false,
-                'display_biography': false,
-                'display_gallery': true,
-                'display_captions': false,
-                'callback': slickInstaPosts,
-                'styling': false,
-                'items': 8,
-                'items_per_row': 4,
-                'margin': 1,
-                'lazy_load': true,
-                'on_error': console.error
-            });
-        })();
+        // (function () {
+        //     new InstagramFeed({
+        //         'username': 'paciello.ipanema',
+        //         'container': document.getElementById("instagram-images"),
+        //         'display_profile': false,
+        //         'display_biography': false,
+        //         'display_gallery': true,
+        //         'display_captions': false,
+        //         'callback': slickInstaPosts,
+        //         'styling': false,
+        //         'items': 8,
+        //         'items_per_row': 4,
+        //         'margin': 1,
+        //         'lazy_load': true,
+        //         'on_error': console.error
+        //     });
+        // })();
     } catch (e) {
         console.log(e);
     }
