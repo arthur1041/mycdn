@@ -263,7 +263,7 @@ function setUpLensModalFunctionalities() {
             });
         });
 
-        continueToResumeBtn.addEventListener("click", function(){
+        continueToResumeBtn.addEventListener("click", function () {
             lensModalMob.querySelector(".lens-list-wrapper").style.display = "none";
             lensModalMob.querySelector(".decoration-list-wrapper").style.display = "none";
             lensModalMob.querySelector(".choose-lens-product-wrapper").style.display = "block";
@@ -522,6 +522,8 @@ function setUpBreadCrumb() {
     }
 }
 
+let imgsGaleria = null;
+
 DomReady.ready(function () {
     const header = document.querySelector("header");
     const menuBtn = document.querySelector(".menu-btn");
@@ -551,6 +553,22 @@ DomReady.ready(function () {
     fetchProductsFromCart();
     configureBuyBtn();
     setUpBreadCrumb();
+
+    //Fazendo galeria
+    if (document.querySelector()) {
+        imgsGaleria = document.querySelectorAll("img[alt='Galeria']");
+
+        imgsGaleria.forEach(function (el) {
+            try {
+                let newGaleryImage = document.createElement("img");
+                newGaleryImage.src = el.src.replace("55-55", "1000-1000");
+
+                document.querySelector(".pictures-gallery-slider").append(newGaleryImage);
+            } catch (error) {
+                console.log(error);
+            }
+        });
+    }
 
     try {
         menuBtn.addEventListener("click", () => {
