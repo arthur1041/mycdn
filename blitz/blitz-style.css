@@ -823,3 +823,7 @@ body {
     position: relative;
     background-color: transparent;
 }
+
+body.device-mobile-optimized #shopify-section-footer{
+    position: relative;
+}
