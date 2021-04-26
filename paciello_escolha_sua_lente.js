@@ -84,8 +84,14 @@ let chooseDecorationBtn = null;
 let lensItems = null;
 let decorationItems = null;
 let addToCartButtons = null;
+let productAddToCartParams = null;
 
 DomReady.ready(function () {
+    try {
+        productAddToCartParams = document.querySelector(".prod-buttons .prod-btn.buy-without-lens").parentElement.getAttribute("href");
+    } catch (error) {
+        console.log(error);
+    }
     //adjusts
     try {
         if (document.querySelector(".portal-notify-me-ref .notifyme.sku-notifyme").style.display !== "none") {
@@ -240,7 +246,7 @@ DomReady.ready(function () {
 
             console.log(params);
 
-            fetch(websitedomain + "/checkout/cart/add?" + params).then(function (response) {
+            fetch(websitedomain + productAddToCartParams + params).then(function (response) {
                 console.log(response);
                 fetchProductsFromCart("adding_prod");
             });
