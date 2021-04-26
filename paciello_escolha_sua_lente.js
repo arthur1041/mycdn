@@ -67,7 +67,7 @@ function configureSelectedStuff() {
 
     if (selectedDecorationItems[0]) {
         if (selectedDecorationItems[0].classList.contains("acabamento-luzes-azuis")) {
-            chosenConfiguration.selectedDecoParameters = chooseLensData.lenteResinaAltoIndice.addToCartParameters;
+            chosenConfiguration.selectedDecoParameters = chooseLensData.acabamentoLuzesAzuis.addToCartParameters;
         } else {
             chosenConfiguration.selectedDecoParameters = null;
         }
@@ -232,11 +232,17 @@ DomReady.ready(function () {
             configureSelectedStuff();
 
             if (chosenConfiguration.selectedLensParameters && chosenConfiguration.selectedDecoParameters) {
+            
                 params = chosenConfiguration.selectedLensParameters + "&" + chosenConfiguration.selectedDecoParameters;
+            
             } else if (chosenConfiguration.selectedLensParameters) {
+                
                 params = chosenConfiguration.selectedLensParameters;
+
             } else if (chosenConfiguration.selectedDecoParameters) {
+                
                 params = chosenConfiguration.selectedDecoParameters;
+            
             }
 
             try {
@@ -244,10 +250,10 @@ DomReady.ready(function () {
             } catch (error) {
                 console.log(error);
             }
-            
-            console.log(productAddToCartParams +"&"+ params);
 
-            fetch(websitedomain + productAddToCartParams +"&"+ params).then(function (response) {
+            console.log(productAddToCartParams + "&" + params);
+
+            fetch(websitedomain + productAddToCartParams + "&" + params).then(function (response) {
                 console.log(response);
                 fetchProductsFromCart("adding_prod");
             });
