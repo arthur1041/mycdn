@@ -816,3 +816,7 @@ body {
         padding-bottom: 0 !important;
     }
 }
+
+.device-mobile-optimized header {
+    z-index: 10;
+}
