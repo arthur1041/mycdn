@@ -146,3 +146,42 @@ section.carousel-section {
 .pictures-gallery-section  .slick-list {
     margin: 0 -15px;
   }
+
+
+  
+
+  
+.pagina-institucional-historia  .historia-quotes.futuro-quote{
+    display: none;
+}
+
+.pagina-institucional-historia  .historia-quotes.do-inicio-quote{
+    display: none;
+}
+
+.pagina-institucional-historia  .futuro-banner2 {
+  margin-top: 247px !important;
+}
+
+.pagina-institucional-historia .historia-quotes.futuro-text-p2{
+  padding-bottom: 60px !important;
+}
+
+@media(min-width: 992px){
+.pagina-institucional-historia .responsabilidade-social-wrapper {
+  margin-top: 790px !important;
+}
+}
+.pagina-institucional-historia .rs-title.institucional-title{
+  display: none;
+}
+
+@media(max-width: 992px){
+.pagina-institucional-historia .fotos-section{
+  padding: 16px 0;
+}
+}
+
+.pagina-institucional-historia .pname {
+  display: none;
+}
