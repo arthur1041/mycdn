@@ -138,3 +138,11 @@ section.carousel-section {
 .login .marcas-section {
     display: none !important;
 } 
+
+.pictures-gallery-section .slick-slide {
+    margin: 0 15px;
+  }
+  /* the parent */
+.pictures-gallery-section  .slick-list {
+    margin: 0 -15px;
+  }
