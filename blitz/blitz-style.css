@@ -901,3 +901,124 @@ body.device-mobile-optimized #comp-kar4cxeliframe {
 #portal-b11255bb-fb2b-4689-b394-6029f534d310 > div > div.Window__WindowComponent-sc-17wvysh-1.exIXPt > div:nth-child(5) {
     display: none !important;
 }
+
+.termos-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+    max-width: 630px;
+}
+
+@font-face {
+    font-family: "Lulo Clean";
+    src: url("https://cdn.shopify.com/s/files/1/0542/7409/7323/files/lulo_clean_one_bold-webfont_edf3dc72-02a7-4e18-aeb3-383a19150508.woff?v=1619519101");
+}
+
+@font-face {
+    font-family: "Avenir Light";
+    src: url("https://cdn.shopify.com/s/files/1/0542/7409/7323/files/avenir-lt-std-35-light.woff?v=1619519842");
+}
+
+
+.mvideo-background {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.mvideo-background video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.termos-heading {
+    font-family: "Avenir Light";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.termos-wrapper {
+    background-color: white;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.termos-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.termos-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.termos-wrapper::-webkit-scrollbar {
+    display: block;
+}
+
+.termos-wrapper .termos {
+    padding: 50px;
+    position: relative;
+}
+
+.heading-border {
+    width: 49px;
+    border-top: 5px solid #550707;
+    margin: 15px 0px 18px 0;
+}
+
+.termos-wrapper .text-container * {
+    font-size: 11px;
+    color: #767777;
+}
+
+.termos-wrapper .link-blitz {
+    text-decoration: none;
+}
+
+.modal-termos-condicoes {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    z-index: 30;
+}
+
+.modal-termos-condicoes.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+#btn-close-termos svg {
+    width: 30px;
+    height: 30px;
+}
+
+#btn-close-termos svg path {
+    fill: #424242;
+    fill-opacity: 1;
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 1px;
+}
+
+#btn-close-termos {
+    position: absolute;
+    right: 23px;
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+}
