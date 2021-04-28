@@ -1,11 +1,9 @@
-document.querySelector("#instagram .galeria");
 
-// memento.vest  
 
 (function(){
     new InstagramFeed({
-        'username': 'github',
-        'container': document.getElementById("instagram-feed2"),
+        'username': 'memento.vest',
+        'container': document.querySelector("#instagram .galeria"),
         'display_profile': false,
         'display_biography': false,
         'display_gallery': true,
