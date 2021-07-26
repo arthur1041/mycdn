@@ -4137,7 +4137,7 @@ div#cabecalho .carrinho .qtd-carrinho {
 }
 
 #cabecalho.fixed .open-menu svg path {
-  fill: white;
+  fill: #03B9FF;
 }
 
 #cabecalho.fixed .open-menu.active .icon1 {
@@ -10911,7 +10911,7 @@ div#instagram h2 a {
 }
 /*ÃƒÆ’Ã‚Â­cone menu flutuante*/
 #cabecalho.fixed .open-menu svg path {
-  fill: white;
+  fill: #03B9FF;
 }
 /*Imagem de BG*/
 #cabecalho {
@@ -11077,7 +11077,7 @@ div.full.menu {
 }
 
 div#cabecalho .actions > li > a svg path {
-  fill: white !important;
+  fill: #03B9FF !important;
 }
 
 div#cabecalho .actions li > a > span {
@@ -11101,7 +11101,7 @@ i.icon-shopping-cart.fundo-principal {
 }
 
 div#cabecalho .actions .carrinho a .icon * {
-  fill: white;
+  fill: #03B9FF;
 }
 
 div#barraNewsletter,
@@ -11223,13 +11223,13 @@ div.conteudo-topo .busca-mobile .atalho-menu.icon-th::before {
 
 @media only screen and (max-width: 767px) {
   div.atalhos-mobile ul li a.icon-user .icon * {
-    fill: white;
+    fill: #03B9FF;
   }
 }
 
 @media only screen and (max-width: 767px) {
   div.atalhos-mobile ul li a svg.icon * {
-    fill: white;
+    fill: #03B9FF;
   }
 }
 
@@ -11364,7 +11364,7 @@ div#instagram {
 
 @media only screen and (max-width: 767px) {
   .flex-direction-nav li a .icon {
-    fill: white !important;
+    fill: #03B9FF !important;
   }
 }
 
