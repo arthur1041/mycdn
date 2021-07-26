@@ -144,3 +144,5 @@
 	bindReady();
 	
 })();
+
+//https://code.google.com/archive/p/domready/
