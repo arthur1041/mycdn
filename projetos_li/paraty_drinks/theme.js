@@ -832,8 +832,8 @@ DomReady.ready(function () {
             </li>
             <li>
                 <p>
-                    <b>Memento Mori - Onde Moda, Filosofia, Ciência e Literatura andam juntos</b></br>
-                    Na Memento Mori você encontra roupas e acessórios pra quem ama filosofia, ciência e literatura. 
+                    <!-- <b>Memento Mori - Onde Moda, Filosofia, Ciência e Literatura andam juntos</b></br> -->
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, officiis! 
                 </p>
             </li>
             <li>
