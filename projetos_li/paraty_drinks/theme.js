@@ -846,9 +846,12 @@ DomReady.ready(function () {
 
 
 
-    $("#rodape .pagamento-selos + div").after(document.querySelector("#rodape .pagamento-selos + div").outerHTML);
-    document.querySelector("#rodape .pagamento-selos + div + div ").innerHTML = "<a href='https://www.siterelampago.com.br'><img id='site-relampago-logo' src='https://cdn.awsli.com.br/1826/1826247/arquivos/logo-rodape-site-relampago.jpg' /></a>"
+    try{
+        $("#rodape .pagamento-selos + div").after(document.querySelector("#rodape .pagamento-selos + div").outerHTML);
+        document.querySelector("#rodape .pagamento-selos + div + div ").innerHTML = "<a href='https://www.siterelampago.com.br'><img id='site-relampago-logo' src='https://cdn.awsli.com.br/1826/1826247/arquivos/logo-rodape-site-relampago.jpg' /></a>"
+    } catch (e){
 
+    }
 
     window.addEventListener("load", function () {
         document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.offers.com-filho > a").setAttribute("href", objetoOfertas.url);
