@@ -11340,35 +11340,34 @@ div#barraNewsletter.posicao-rodape .conteiner {
   background: #edae49 !important;
 }
 
-
 div#instagram {
-	display: none !important;
+  display: none !important;
 }
 
-#rodape .lista-redes [class^=icon] {
-    color: #ffffff !important;
+#rodape .lista-redes [class^="icon"] {
+  color: #ffffff !important;
 }
 
 .pagina-pagina .conteudo h1 {
-    text-transform: unset;
+  text-transform: unset;
 }
 
-@media(max-width: 766px){
-.flex-direction-nav li a {
+@media (max-width: 766px) {
+  .flex-direction-nav li a {
     background: #fee53399 !important;
-}
+  }
 }
 
 .banner .flexslider .flex-control-paging li a.flex-active {
-    background: black !important;
+  background: black !important;
 }
 
-@media only screen and (max-width: 767px){
-.flex-direction-nav li a .icon {
+@media only screen and (max-width: 767px) {
+  .flex-direction-nav li a .icon {
     fill: white !important;
-}
+  }
 }
 
 li.offers {
-	display: none !important;
+  display: none !important;
 }
