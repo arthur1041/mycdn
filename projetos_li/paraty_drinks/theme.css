@@ -11241,7 +11241,7 @@ div.conteudo-topo .busca-mobile .atalho-menu.icon-th::before {
 
 #cabecalho div.busca input,
 #cabecalho div.busca input:focus {
-  background: white;
+  /* background: white; */
 }
 
 .carrinho-checkout ul.atendimento li span.display-table {
