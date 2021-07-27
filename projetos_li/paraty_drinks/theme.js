@@ -854,7 +854,17 @@ DomReady.ready(function () {
     }
 
     window.addEventListener("load", function () {
-        document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.offers.com-filho > a").setAttribute("href", objetoOfertas.url);
+        try{
+            document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.offers.com-filho > a").setAttribute("href", objetoOfertas.url);
+        } catch (error) {
+            console.log(error);
+        }
     });
+
+    try {
+        document.querySelector("#rodape > div:nth-child(3)").style.display = "none";
+    } catch (error) {
+        console.log(error);
+    }
 
 });
