@@ -10810,7 +10810,7 @@ div#instagram h2 a {
 
 /*icone newsletter*/
 #barraNewsletter.posicao-rodape .componente .texto-newsletter svg.icon path {
-  stroke: black;
+  stroke: #007CAD;
 }
 /*botÃƒÆ’Ã‚Â£o newsletter*/
 #barraNewsletter.posicao-rodape .componente .newsletter-assinar {
