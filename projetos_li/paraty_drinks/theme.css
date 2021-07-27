@@ -11249,7 +11249,7 @@ div.conteudo-topo .busca-mobile .atalho-menu.icon-th::before {
 }
 
 body .cor-principal {
-  color: #edae49;
+  color: #91E0FF;
 }
 
 body a,
@@ -11259,18 +11259,18 @@ body .cor-principal,
 body .menu a:hover,
 body .atributo-comum a:hover span,
 body .atributo-comum .active a span {
-  color: #edae49;
+  color: #91E0FF;
 }
 
 body .botao.principal.botao-comprar,
 body .botao.principal.grande,
 body .acoes-produto-responsiva .tag-comprar {
-  background-color: #edae49;
+  background-color: #91E0FF;
 }
 
 body .finalizar-compra .botao.principal {
-  background: #edae49;
-  border-color: #edae49;
+  background: #91E0FF;
+  border-color: #91E0FF;
 }
 
 body .fundo-principal,
@@ -11283,7 +11283,7 @@ body .filtro.lista ul li label:hover,
 body .filtro.lista ul li.active label,
 body .menu-simples li a:hover,
 body .menu-simples li.active a {
-  background-color: #edae49;
+  background-color: #91E0FF;
 }
 
 #modalContato
@@ -11316,28 +11316,28 @@ div#cabecalho .carrinho .carrinho-interno .carrinho-rodape .botao:after {
 
 #listagemProdutos.listagem .listagem-item .acoes-produto .botao-comprar,
 .listagem.aproveite-tambem .listagem-item .acoes-produto .botao-comprar {
-  background: #edae49 !important;
+  background: #91E0FF !important;
 }
 
 /**/
 
 div#barraNewsletter.posicao-rodape {
-  background: #edae49;
+  background: #91E0FF;
 }
 
 div.full.menu div.conteiner .nivel-um > li.offers .icon path {
-  fill: #edae49 !important;
+  fill: #91E0FF !important;
 }
 
 div.full.menu div.conteiner .nivel-um > li.offers > a > .titulo {
-  color: #edae49 !important;
+  color: #91E0FF !important;
 }
 
 div#barraNewsletter,
 div#barraNewsletter .show-hide,
 div#barraNewsletter .componente,
 div#barraNewsletter.posicao-rodape .conteiner {
-  background: #edae49 !important;
+  background: #91E0FF !important;
 }
 
 div#instagram {
