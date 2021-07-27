@@ -5667,8 +5667,8 @@ p.info-banner.titulo {
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3);
+  /* -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3); */
 }
 
 #listagemProdutos.listagem .listagem-item .acoes-produto .botao-comprar,
