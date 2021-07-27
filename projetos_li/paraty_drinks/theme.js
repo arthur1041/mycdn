@@ -867,4 +867,11 @@ DomReady.ready(function () {
         console.log(error);
     }
 
+    if(document.querySelector("body.pagina-inicial")){
+        try {
+            document.querySelector("#corpo .conteiner").append(document.querySelector(".marcas.hidden-phone"));
+        } catch (e) {
+            console.log(e);
+        }
+    }
 });
