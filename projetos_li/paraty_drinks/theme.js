@@ -850,7 +850,7 @@ DomReady.ready(function () {
         $("#rodape .pagamento-selos + div").after(document.querySelector("#rodape .pagamento-selos + div").outerHTML);
         document.querySelector("#rodape .pagamento-selos + div + div ").innerHTML = "<a href='https://www.siterelampago.com.br'><img id='site-relampago-logo' src='https://cdn.awsli.com.br/1826/1826247/arquivos/logo-rodape-site-relampago.jpg' /></a>"
     } catch (e){
-
+        console.log(e);
     }
 
     window.addEventListener("load", function () {
