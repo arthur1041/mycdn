@@ -11131,7 +11131,7 @@ div#barraNewsletter.posicao-rodape .conteiner {
   }
 }
 
-#rodape * {
+#rodape *:not(.logo-e-info a.btn-sobre) {
   color: #4D265B !important;
 }
 
