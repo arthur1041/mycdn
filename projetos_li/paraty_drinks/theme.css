@@ -11318,6 +11318,7 @@ div#cabecalho .carrinho .carrinho-interno .carrinho-rodape .botao:after {
 #listagemProdutos.listagem .listagem-item .acoes-produto .botao-comprar,
 .listagem.aproveite-tambem .listagem-item .acoes-produto .botao-comprar {
   background: #F21314 !important;
+  border-radius: 20px;
 }
 
 /**/
