@@ -10694,7 +10694,7 @@ element.style {
   right: 0;
   left: 0;
   bottom: 20%;
-  background-color: rgba(214, 214, 214, 0.5);
+  /* background-color: rgba(214, 214, 214, 0.5); */
   text-align: center;
   padding: 60px 0;
   border-width: 1px 0;
