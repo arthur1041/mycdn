@@ -86,7 +86,7 @@ textarea:-moz-placeholder {
 /*////////////// INFO TOPO //////////////*/
 
 .bg-top {
-    background-color: #FBE6DE;
+    background-color: #FF97A5;
 }
 
 .info-top {
@@ -95,7 +95,7 @@ textarea:-moz-placeholder {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #FBE6DE;
+    background-color: #FF97A5;
 }
 
 .info-top .info-tel span {
