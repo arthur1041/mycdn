@@ -723,7 +723,58 @@ $(function () {
 
     //Brands
     $('.marcas').prepend($("<strong>Escolha pela marca</strong>"));
-    $('.marcas').insertAfter('#corpo .conteiner .secao-principal .mini-banner');
+
+    //About us
+    const aboutUsWrapper = $(/*html*/`
+      <div class="about-us">
+        <div class="grid-item info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+          deserunt rem ratione error, perspiciatis ducimus exercitationem eos
+          cum quaerat incidunt laborum consectetur! Voluptates nesciunt dicta
+          dolore fuga eum quo corporis at accusamus cupiditate! Nobis
+          necessitatibus dignissimos illum! Ab sint delectus quisquam quis optio
+          iure quibusdam voluptatibus repellat amet temporibus! Ab, at. Illo
+          modi odio, quae nobis, id dolores voluptas iure corrupti impedit neque
+          perferendis perspiciatis sequi distinctio deserunt ducimus dolorem.
+          Illum excepturi neque perspiciatis. Temporibus earum, atque animi
+          architecto minima ratione molestias unde perspiciatis nemo molestiae,
+          nulla quo ex neque optio, voluptas eveniet adipisci soluta aliquid qui
+          sed facilis aspernatur. Dolores dicta eligendi provident, nulla nihil
+          maiores, quidem alias expedita et sed sequi tenetur labore facere
+          voluptate obcaecati error sit inventore laboriosam, debitis ullam enim
+          non. Asperiores architecto in, non deleniti odio cumque corporis
+          molestiae, praesentium, voluptates quisquam sequi consequuntur dolor
+          provident adipisci reprehenderit ad odit mollitia doloribus nulla
+          temporibus? Repudiandae ad delectus minus sit pariatur eaque fugit
+          saepe nihil quidem at aliquid, reiciendis recusandae. Fugit error ad,
+          excepturi assumenda, exercitationem quasi inventore sint nesciunt
+          architecto rerum ratione quos? Molestiae impedit saepe reprehenderit
+          cupiditate quidem, labore repellendus minima doloribus ducimus laborum
+          ullam excepturi molestias nemo temporibus nobis iusto aperiam mollitia
+          quaerat beatae cum quo quam praesentium. Dolor est id commodi fugit
+          quae? Veritatis nulla accusantium consequuntur eveniet dignissimos
+          veniam, voluptatem adipisci quisquam voluptatibus. Culpa, officiis
+          vitae, ex sequi obcaecati iusto, repellat tempore sint praesentium
+          architecto voluptates et harum! Aut ea exercitationem quidem veniam,
+          fugiat veritatis dolorem voluptatibus itaque molestiae sapiente.
+          Voluptas labore architecto ratione, cumque earum dolorem eum numquam
+          incidunt, repellat explicabo doloremque quasi excepturi corporis
+          aspernatur atque repudiandae laboriosam! Odit maiores necessitatibus
+          asperiores reiciendis at repellendus. Aliquid in quaerat suscipit.
+          Saepe, cum? Voluptates minima, adipisci fugit obcaecati culpa,
+          assumenda iure, ipsum atque exercitationem accusamus eos saepe harum
+          ea dolorem.
+        </div>
+        <div class="grid-item picture">
+          <div class="image-wrapper">
+            <img src="https://via.placeholder.com/1000" />
+          </div>
+        </div>
+      </div>
+    `);
+
+    
+    $(aboutUsWrapper).insertAfter('#corpo .conteiner .secao-principal .mini-banner');
 
     //Product
     $('.pagina-produto .comprar .icon-shopping-cart').append($('<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16.949" height="22.052" viewBox="0 0 16.949 22.052"><path id="cadeado" d="M72.06,8.905h-.43V6.894A6.856,6.856,0,0,0,64.989,0c-.1,0-.3,0-.4,0a6.856,6.856,0,0,0-6.641,6.893V8.905h-.43a1.4,1.4,0,0,0-1.2,1.527V20.519a1.4,1.4,0,0,0,1.2,1.533H72.06a1.4,1.4,0,0,0,1.2-1.533V10.433A1.4,1.4,0,0,0,72.06,8.905Zm-5.91,6.56v3.048a.651.651,0,0,1-.641.644H64.067a.651.651,0,0,1-.641-.644V15.466a1.846,1.846,0,0,1,1.161-3.14c.1,0,.3,0,.4,0a1.846,1.846,0,0,1,1.161,3.14ZM68.8,8.905H60.777V6.894a4.011,4.011,0,1,1,8.021,0V8.905Z" transform="translate(-56.313)" fill="#fff"/></svg>'));
