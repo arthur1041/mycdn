@@ -871,63 +871,66 @@ $(function () {
 });
 
 // EXTRA
-DomReady.ready(function () {
+try {
+  DomReady.ready(function () {
 
-    $("#rodape .institucional .conteiner .row-fluid .row-fluid").prepend(`<div class="span1 spacer"></div>`);
-    $("#rodape .institucional .conteiner .row-fluid .row-fluid").prepend(`
-	<div class="span4 links-rodape links-rodape-logo-e-info">
-        <ul class="logo-e-info">
-            <li>
-                <a href="/">
-                    <img src="${document.querySelector("#cabecalho .logo img") ? document.querySelector("#cabecalho .logo img").src : ''}">
-                </a>
-            </li>
-            <li>
-                <p>
-                    <!-- <b>Memento Mori - Onde Moda, Filosofia, Ciência e Literatura andam juntos</b></br> -->
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, officiis! 
-                </p>
-            </li>
-            <li>
-                <a class="btn-sobre" href="/pagina/quem-somos.html">
-                    sobre
-                </a>
-            </li>
-        </ul>
-    </div>`);
+      $("#rodape .institucional .conteiner .row-fluid .row-fluid").prepend(`<div class="span1 spacer"></div>`);
+      $("#rodape .institucional .conteiner .row-fluid .row-fluid").prepend(`
+    <div class="span4 links-rodape links-rodape-logo-e-info">
+          <ul class="logo-e-info">
+              <li>
+                  <a href="/">
+                      <img src="${document.querySelector("#cabecalho .logo img") ? document.querySelector("#cabecalho .logo img").src : ''}">
+                  </a>
+              </li>
+              <li>
+                  <p>
+                      <!-- <b>Memento Mori - Onde Moda, Filosofia, Ciência e Literatura andam juntos</b></br> -->
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, officiis! 
+                  </p>
+              </li>
+              <li>
+                  <a class="btn-sobre" href="/pagina/quem-somos.html">
+                      sobre
+                  </a>
+              </li>
+          </ul>
+      </div>`);
 
 
 
-    try{
-        $("#rodape .pagamento-selos + div").after(document.querySelector("#rodape .pagamento-selos + div").outerHTML);
-        document.querySelector("#rodape .pagamento-selos + div + div ").innerHTML = "<a href='https://www.siterelampago.com.br'><img id='site-relampago-logo' src='https://cdn.awsli.com.br/1826/1826247/arquivos/logo-rodape-site-relampago.jpg' /></a>"
-    } catch (e){
-        console.log(e);
-    }
+      try{
+          $("#rodape .pagamento-selos + div").after(document.querySelector("#rodape .pagamento-selos + div").outerHTML);
+          document.querySelector("#rodape .pagamento-selos + div + div ").innerHTML = "<a href='https://www.siterelampago.com.br'><img id='site-relampago-logo' src='https://cdn.awsli.com.br/1826/1826247/arquivos/logo-rodape-site-relampago.jpg' /></a>"
+      } catch (e){
+          console.log(e);
+      }
 
-    window.addEventListener("load", function () {
-        try{
-            document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.offers.com-filho > a").setAttribute("href", objetoOfertas.url);
-        } catch (error) {
-            console.log(error);
-        }
-    });
+      window.addEventListener("load", function () {
+          try{
+              document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.offers.com-filho > a").setAttribute("href", objetoOfertas.url);
+          } catch (error) {
+              console.log(error);
+          }
+      });
 
-    try {
-        document.querySelector("#rodape > div:nth-child(3)").style.display = "none";
-    } catch (error) {
-        console.log(error);
-    }
+      try {
+          document.querySelector("#rodape > div:nth-child(3)").style.display = "none";
+      } catch (error) {
+          console.log(error);
+      }
 
-    if(document.querySelector("body.pagina-inicial")){
-        try {
-            document.querySelector("#corpo .conteiner").append(document.querySelector(".marcas.hidden-phone"));
-        } catch (e) {
-            console.log(e);
-        }
-    }
-});
-
+      if(document.querySelector("body.pagina-inicial")){
+          try {
+              document.querySelector("#corpo .conteiner").append(document.querySelector(".marcas.hidden-phone"));
+          } catch (e) {
+              console.log(e);
+          }
+      }
+  });
+} catch (e){
+  console.log(e)
+} 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
   try {
