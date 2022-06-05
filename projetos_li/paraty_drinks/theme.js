@@ -927,3 +927,28 @@ DomReady.ready(function () {
         }
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  try {
+    let firstIconSvg = document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.all-categories.com-filho > a > strong > svg");
+    
+    let alambiques = document.querySelector("#cabecalho > div.full.menu.hidden-phone > div > ul > li.categoria-id-17375906.com-filho.borda-principal");
+    document.querySelector("#cabecalho > div.full.menu.hidden-phone ul.nivel-um").prepend(alambiques);
+    
+    alambiques.querySelector(".titulo").prepend(firstIconSvg);
+    
+    alambiques.classList.add("all-categories");
+    
+    let categoriaPaginas = document.querySelectorAll("li.categoria-paginas")
+    categoriaPaginas.forEach(el => {
+      el.classList.remove("com-filho");
+      el.querySelector(".nivel-dois").remove();
+      el.querySelector("a strong").innerText = "Quem Somos";
+      el.querySelector("a").href = "#about-us-section";
+    });
+  } catch (e){
+    console.log(e);
+  }
+});
+
