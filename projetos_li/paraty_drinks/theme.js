@@ -877,7 +877,7 @@ $(function () {
 
     //About us
     const aboutUsWrapper = $(/*html*/`
-      <div class="about-us">
+      <div id="about-us-section" class="about-us">
         <div class="grid-item info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
           deserunt rem ratione error, perspiciatis ducimus exercitationem eos
