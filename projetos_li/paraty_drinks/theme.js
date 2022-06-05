@@ -722,7 +722,7 @@ $(function () {
     $('.flex-next').append($('<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.446 20.079"><g transform="translate(-97.138 0)"><path d="M108.173,11.033l-8.634,8.633a1.406,1.406,0,0,1-1.989-1.988l7.639-7.639L97.55,2.4A1.406,1.406,0,1,1,99.539.412l8.634,8.634a1.406,1.406,0,0,1,0,1.988Z" transform="translate(0 0)"/></g></svg>'));
 
     //Brands
-    $('.marcas').prepend($("<strong>Escolha pela marca</strong>"));
+    $('.marcas').prepend($("<strong>Alambiques</strong>"));
 
     //About us
     const aboutUsWrapper = $(/*html*/`
@@ -921,7 +921,9 @@ DomReady.ready(function () {
 
     if(document.querySelector("body.pagina-inicial")){
         try {
-            document.querySelector("#corpo .conteiner").append(document.querySelector(".marcas.hidden-phone"));
+            let marcasSection = document.querySelector(".marcas.hidden-phone");
+            document.querySelector("#corpo .conteiner").append(marcasSection);
+            marcasSection.classList.remove("hidden-phone");
         } catch (e) {
             console.log(e);
         }
