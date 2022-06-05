@@ -774,7 +774,9 @@ $(function () {
     `);
     
     $('.marcas').prepend(aboutUsWrapper);
-    
+
+    $('.marcas').prepend($("<strong>Quem Somos</strong>"));
+
     //Product
     $('.pagina-produto .comprar .icon-shopping-cart').append($('<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16.949" height="22.052" viewBox="0 0 16.949 22.052"><path id="cadeado" d="M72.06,8.905h-.43V6.894A6.856,6.856,0,0,0,64.989,0c-.1,0-.3,0-.4,0a6.856,6.856,0,0,0-6.641,6.893V8.905h-.43a1.4,1.4,0,0,0-1.2,1.527V20.519a1.4,1.4,0,0,0,1.2,1.533H72.06a1.4,1.4,0,0,0,1.2-1.533V10.433A1.4,1.4,0,0,0,72.06,8.905Zm-5.91,6.56v3.048a.651.651,0,0,1-.641.644H64.067a.651.651,0,0,1-.641-.644V15.466a1.846,1.846,0,0,1,1.161-3.14c.1,0,.3,0,.4,0a1.846,1.846,0,0,1,1.161,3.14ZM68.8,8.905H60.777V6.894a4.011,4.011,0,1,1,8.021,0V8.905Z" transform="translate(-56.313)" fill="#fff"/></svg>'));
     setTimeout(function () {
