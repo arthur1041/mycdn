@@ -949,7 +949,7 @@ $(function () {
     $('#rodape .institucional .conteiner .span9 .row-fluid').prepend($('.sobre-loja-rodape'));
 
     var $contact = $('#rodape .visible-phone ul').html();
-    $('#rodape .span9 .row-fluid .links-rodape-paginas').after('<div class="span4 links-rodape links-rodape-atendimento"><span class="titulo">atendimento</span><ul class="contact">' + $contact + '</ul></div>');
+    // $('#rodape .span9 .row-fluid .links-rodape-paginas').after('<div class="span4 links-rodape links-rodape-atendimento"><span class="titulo">atendimento</span><ul class="contact">' + $contact + '</ul></div>');
 
     $('#rodape .institucional .titulo').click(function () {
         $(this).siblings('ul, .office-hours').toggleClass('active');
