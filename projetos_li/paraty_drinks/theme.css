@@ -4385,9 +4385,9 @@ div#cabecalho .carrinho .qtd-carrinho {
 }
 
 .full.menu .all-categories .nivel-dois {
-  width: -webkit-min-content;
+  /* width: -webkit-min-content;
   width: -moz-min-content;
-  width: min-content;
+  width: min-content; */
 }
 
 .full.menu .conteiner .nivel-um > li:nth-child(6) > .nivel-dois {
