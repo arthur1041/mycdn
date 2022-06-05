@@ -929,7 +929,7 @@ try {
       }
   });
 } catch (e){
-  console.log(e)
+  console.log(e);
 } 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
