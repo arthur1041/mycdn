@@ -925,7 +925,7 @@ $(function () {
       </div>
     `);
     
-    $('.secao-banners').append($("<strong>Quem Somos</strong>"));
+    $('.secao-banners').append($("<strong id='quem-somos-title' >Quem Somos</strong>"));
 
     $('.secao-banners').append(aboutUsWrapper);
 

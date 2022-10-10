@@ -11425,3 +11425,11 @@ li.offers {
 .marcas.hidden-phone {
 	display: initial !important;
 }
+
+#quem-somos-title {
+  margin-left: 20px;
+}
+
+#about-us-section {
+  padding: 0px 30px;
+}
