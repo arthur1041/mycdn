@@ -1010,7 +1010,7 @@ $(function () {
     LI.methods.tabs();
     LI.methods.tracking();
     LI.methods.video();
-    LI.methods.instagram();
+    // LI.methods.instagram();
     LI.methods.floatIcons();
     LI.methods.scrollToTop();
     //LI.methods.copyright();
