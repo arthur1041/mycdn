@@ -726,7 +726,7 @@ $(function () {
         $('#listagemProdutos .titulo-categoria.Ofertas').remove();
 
         $.ajax({
-            url: "../premium",
+            url: "../ofertas-especiais",
             type: 'GET',
             success: function (data) {
                 var elements = $(data).find(".listagem>ul .span3:nth-child(1), .listagem>ul .span3:nth-child(2)");
