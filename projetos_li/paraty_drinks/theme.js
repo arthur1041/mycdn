@@ -1074,7 +1074,8 @@ try {
 
       if(document.querySelector("body.pagina-inicial")){
           try {
-              document.querySelector("#corpo .conteiner").append(document.querySelector(".marcas.hidden-phone"));
+            const marcas = document.querySelector(".marcas.hidden-phone")
+            document.querySelector("#corpo .conteiner").append(marcas ? marcas : '');
           } catch (e) {
               console.log(e);
           }
