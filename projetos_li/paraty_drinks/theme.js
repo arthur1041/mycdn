@@ -732,8 +732,8 @@ $(function () {
                 var elements = $(data).find(".listagem>ul .span3:nth-child(1), .listagem>ul .span3:nth-child(2)");
                 console.log("aqui", $(data));
                 console.log("elements", elements);
-                $(".full.menu .offers .mega-recebe-prod .listagem ul").empty();
-                $(".full.menu .offers .mega-recebe-prod .listagem ul").append(elements);
+                $(".full.menu .mega-recebe-prod .listagem ul").empty();
+                $(".full.menu .mega-recebe-prod .listagem ul").append(elements);
 
 
             }
