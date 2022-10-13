@@ -725,7 +725,8 @@ $(function () {
 
         $('#listagemProdutos .titulo-categoria.Ofertas').remove();
 
-        $.ajax({
+        //remover esse comentário
+        /*$.ajax({
             url: "../premium",
             type: 'GET',
             success: function (data) {
@@ -734,10 +735,8 @@ $(function () {
                 console.log("elements", elements);
                 $(".full.menu .mega-recebe-prod .listagem ul").empty();
                 $(".full.menu .mega-recebe-prod .listagem ul").append(elements);
-
-
             }
-        });
+        });*/
     };
 
     LI.methods.counterOffer = function () {
