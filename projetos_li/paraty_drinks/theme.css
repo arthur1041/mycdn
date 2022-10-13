@@ -4648,7 +4648,11 @@ div#cabecalho .carrinho .qtd-carrinho {
 }
 
 .full.menu .conteiner li.all-categories.com-filho .mega-recebe {
-  display: none;
+  /* display: none; */
+}
+
+.nivel-um > li:not(.all-categories) {
+	display: none;
 }
 
 .full.menu .conteiner li.all-categories.com-filho .nivel-dois .titulo {
