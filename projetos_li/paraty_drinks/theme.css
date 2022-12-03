@@ -4276,6 +4276,7 @@ div#cabecalho .carrinho .qtd-carrinho {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   /* justify-content: space-between; */
+  gap: 40px;
 }
 
 .full.menu .conteiner .nivel-dois {
