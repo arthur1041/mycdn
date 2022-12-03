@@ -5501,4 +5501,16 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
 });
 
-
+//novo quem somos
+$(document).ready(function () {
+  $(
+    '#cabecalho > div.full.menu.hidden-phone > div > ul'
+  ).append(`<li class="quem-somos-17976708  borda-principal" style="width: 14.2857%;">
+        <a href="#quem-somos-new" title="#">
+          <strong class="titulo cor-secundaria">Quem Somos</strong>
+        </a>
+      </li>`);
+  $("#barraNewsletter").before(`<div style="width: 100%;" id="quem-somos-new" >
+      <img style="width: 100%;" src="https://i.imgur.com/38CHrbD.jpg" />
+    </div>`);
+});
