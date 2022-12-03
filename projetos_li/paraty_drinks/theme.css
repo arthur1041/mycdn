@@ -4275,7 +4275,7 @@ div#cabecalho .carrinho .qtd-carrinho {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .full.menu .conteiner .nivel-dois {
@@ -4651,8 +4651,8 @@ div#cabecalho .carrinho .qtd-carrinho {
   /* display: none; */
 }
 
-.nivel-um > li:not(.all-categories) {
-	display: none;
+.nivel-um > li:not(.categoria-id-17375906) {
+  display: none;
 }
 
 .full.menu .conteiner li.all-categories.com-filho .nivel-dois .titulo {
@@ -11437,4 +11437,8 @@ li.offers {
 
 #about-us-section {
   padding: 0px 30px;
+}
+
+.categoria-id-17976708 {
+	display: block !important;
 }
