@@ -9085,7 +9085,7 @@ body:not(.pagina-inicial) #video {
 }
 
 #rodape .institucional {
-  min-height: 425px;
+  min-height: fit-content;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-image: none;
