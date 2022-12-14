@@ -5411,7 +5411,9 @@ try {
     $('#rodape .institucional .conteiner .row-fluid .row-fluid').prepend(
       `<div class="span1 spacer"></div>`
     );
-    $('#rodape .institucional .conteiner .row-fluid .row-fluid').prepend(/*html*/`
+    $(
+      '#rodape .institucional .conteiner .row-fluid .row-fluid'
+    ).prepend(/*html*/ `
     <div class="span4 links-rodape links-rodape-logo-e-info">
           <ul class="logo-e-info">
               <li>
@@ -5503,6 +5505,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 //novo quem somos
 $(document).ready(function () {
+  //icone da navbar
   $(
     '#cabecalho > div.full.menu.hidden-phone > div > ul'
   ).append(`<li class="quem-somos-17976708  borda-principal" style="width: 14.2857%;">
@@ -5510,7 +5513,22 @@ $(document).ready(function () {
           <strong class="titulo cor-secundaria">Quem Somos</strong>
         </a>
       </li>`);
-  $("#barraNewsletter").before(`<div style="width: 100%;" id="quem-somos-new" >
-      <img style="width: 100%;" src="https://i.imgur.com/38CHrbD.jpg" />
-    </div>`);
+  $('#barraNewsletter').before(/*html*/ `<div id="quem-somos-new">
+  <img src="https://i.imgur.com/38CHrbD.jpg" />
+  <div class="descricao-quem-somos">
+    <h1>Quem somos</h1>
+    <p>
+      A Paratydrinks, é um e-commerce especializado na distribuição de
+      cachaças premium. Nasceu através do amor pela cidade de Paraty, onde
+      foi fundada, e pelo prazer de degustar uma boa cachaça. Paraty, cidade
+      considerada uma das maiores produtoras de cachaça do Brasil, possui
+      ainda enraizada em sua cultura a maneira artesanal de produzir
+      cachaça. Com um acervo de cachaças que possuem premiações nacionais e
+      internacionais, oferecemos todas as opções de cachaças e licores
+      produzidas na cidade. Nosso amor não para por aí, comercializamos
+      também as mais conceituadas cachaças do Brasil. Somos apaixonados por
+      cachaça, Compre com quem intende do assunto!
+    </p>
+  </div>
+</div>`);
 });

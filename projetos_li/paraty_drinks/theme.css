@@ -11420,6 +11420,16 @@ li.offers {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
+
+  #quem-somos-new .descricao-quem-somos p{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500) {
+  #quem-somos-new .descricao-quem-somos {
+    display: none;
+  }
 }
 /* fim about us */
 
@@ -11452,10 +11462,30 @@ li.offers {
 	margin-top: 7%;
 }
 
+/* novo sobre nós */
 #quem-somos-title {
 	display: none !important;
 }
 
 #about-us-section {
 	display: none !important;
+}
+
+#quem-somos-new {
+  width: 100%;
+  position: relative;
+}
+
+#quem-somos-new img {
+  width: 100%;
+}
+
+#quem-somos-new .descricao-quem-somos {
+  position: absolute;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 50%;
+  padding: 30px;
 }
