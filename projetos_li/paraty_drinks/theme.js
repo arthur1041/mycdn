@@ -5532,3 +5532,7 @@ $(document).ready(function () {
   </div>
 </div>`);
 });
+
+document.querySelector(
+  '#rodape > div.institucional.fundo-secundario > div > div > div > div > div.span4.links-rodape.links-rodape-paginas > ul > li:nth-child(2) > a'
+).href = '#quem-somos-new';
