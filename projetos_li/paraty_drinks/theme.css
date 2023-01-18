@@ -11517,3 +11517,20 @@ a > .fundo-secundario {
 ul.nivel-dois:hover {
 	display: block !important;
 }
+
+@media screen and (max-width: 718px) {
+  #quem-somos-new {
+    min-height: 321px;
+    background-color: #91E0FF;
+    
+  }
+  
+  .descricao-quem-somos h1{
+  	font-size: 27px;
+  }
+  
+  .descricao-quem-somos {
+  	padding: 10px !important;
+    max-width: 188px !important;
+  }
+}
